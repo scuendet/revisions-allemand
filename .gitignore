@@ -1,0 +1,11 @@
+/data/vocab.db
+/data/users.json
+/data/results-*.json
+/data/verb-results-*.json
+/data/quiz-sessions-*.json
+.env.local
+.env
+node_modules/
+.next/
+.vercel
+tsconfig.tsbuildinfo

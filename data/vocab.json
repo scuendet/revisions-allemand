@@ -1,0 +1,1143 @@
+[
+  {
+    "id": 108,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "l'emploi du temps",
+    "german": "der Stundenplan, die Stundenpläne"
+  },
+  {
+    "id": 109,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "le jour d'école",
+    "german": "der Schultag, die Schultage"
+  },
+  {
+    "id": 110,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "l'élève (masculin)",
+    "german": "der Schüler, die Schüler"
+  },
+  {
+    "id": 111,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "l'élève (féminin)",
+    "german": "die Schülerin, die Schülerinnen"
+  },
+  {
+    "id": 112,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "la branche, la matière",
+    "german": "das Schulfach, die Schulfächer"
+  },
+  {
+    "id": 113,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "le français",
+    "german": "(das) Französisch"
+  },
+  {
+    "id": 114,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "l'allemand",
+    "german": "(das) Deutsch"
+  },
+  {
+    "id": 115,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "l'anglais",
+    "german": "(das) Englisch"
+  },
+  {
+    "id": 116,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "la science, les sciences",
+    "german": "(die) Wissenschaft, die Wissenschaften"
+  },
+  {
+    "id": 117,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "l'histoire",
+    "german": "(die) Geschichte"
+  },
+  {
+    "id": 118,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "la géographie",
+    "german": "(die) Geografie"
+  },
+  {
+    "id": 119,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "les arts plastiques (l'art visuel)",
+    "german": "(die) Kunst"
+  },
+  {
+    "id": 120,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "les mathématiques",
+    "german": "(die) Mathematik"
+  },
+  {
+    "id": 121,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "la musique",
+    "german": "(die) Musik"
+  },
+  {
+    "id": 122,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "le sport (l'éducation physique)",
+    "german": "(der) Sport"
+  },
+  {
+    "id": 123,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "Ma branche préférée est la biologie.",
+    "german": "Mein Lieblingsfach ist Biologie."
+  },
+  {
+    "id": 124,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "en première heure (période) / En première période, j'ai le sport.",
+    "german": "in der ersten Stunde / In der ersten Stunde habe ich Sport."
+  },
+  {
+    "id": 125,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "en dernière heure (période) / En dernière heure, j'ai l'anglais.",
+    "german": "in der letzten Stunde / In der letzten Stunde habe ich Englisch."
+  },
+  {
+    "id": 126,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "Le lundi, nous avons ... (+ branche)",
+    "german": "Am Montag haben wir ... (+ Schulfach)."
+  },
+  {
+    "id": 127,
+    "unit": 1,
+    "unit_title": "Mein Stundenplan",
+    "french": "Après, nous avons l'histoire.",
+    "german": "Dann haben wir Geschichte."
+  },
+  {
+    "id": 128,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "Quelle est ta branche préférée ?",
+    "german": "Was ist dein Lieblingsfach ?"
+  },
+  {
+    "id": 129,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "Ma branche préférée, c'est ___.",
+    "german": "Mein Lieblingsfach ist ___."
+  },
+  {
+    "id": 130,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "aimer (bien)",
+    "german": "mögen, er mag"
+  },
+  {
+    "id": 131,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "J'aime... / J'aime lire des livres.",
+    "german": "Ich mag... / Ich mag Bücher lesen."
+  },
+  {
+    "id": 132,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "Je n'aime pas... / Je n'aime pas l'histoire.",
+    "german": "... mag ich nicht. / Geschichte mag ich nicht."
+  },
+  {
+    "id": 133,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "ennuyeux, -euse",
+    "german": "langweilig"
+  },
+  {
+    "id": 134,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "intéressant, -e",
+    "german": "interessant"
+  },
+  {
+    "id": 135,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "compliqué, -e",
+    "german": "kompliziert"
+  },
+  {
+    "id": 136,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "difficile",
+    "german": "schwer"
+  },
+  {
+    "id": 137,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "super, génial",
+    "german": "toll"
+  },
+  {
+    "id": 138,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "Je trouve cela ennuyeux.",
+    "german": "Das finde ich langweilig."
+  },
+  {
+    "id": 139,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "J'aime les langues.",
+    "german": "Ich liebe Sprachen."
+  },
+  {
+    "id": 140,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "Je t'embrasse. / Amicalement. / Bien à vous (toi). / Cordialement.",
+    "german": "Viele Grüsse"
+  },
+  {
+    "id": 141,
+    "unit": 2,
+    "unit_title": "Mein Lieblingsfach",
+    "french": "à bientôt",
+    "german": "Bis bald"
+  },
+  {
+    "id": 142,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "le maître, le professeur (masculin)",
+    "german": "der Lehrer, die Lehrer"
+  },
+  {
+    "id": 143,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "la maîtresse, le professeur (féminin)",
+    "german": "die Lehrerin, die Lehrerinnen"
+  },
+  {
+    "id": 144,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "l'interview",
+    "german": "das Interview, die Interviews"
+  },
+  {
+    "id": 145,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "le hobby, le passe-temps",
+    "german": "das Hobby, die Hobbys"
+  },
+  {
+    "id": 146,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "le club de lecture",
+    "german": "der Leseclub, die Leseclubs"
+  },
+  {
+    "id": 147,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "le ski",
+    "german": "das Skifahren"
+  },
+  {
+    "id": 148,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "Quel est votre sport préféré ? (politesse)",
+    "german": "Was ist Ihr Lieblingssport ?"
+  },
+  {
+    "id": 149,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "Que faites-vous ? (politesse)",
+    "german": "Was machen Sie ?"
+  },
+  {
+    "id": 150,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "Avez-vous un instant ?",
+    "german": "Haben Sie kurz Zeit ?"
+  },
+  {
+    "id": 151,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "Merci beaucoup. / Sincères remerciements.",
+    "german": "Herzlichen Dank."
+  },
+  {
+    "id": 152,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "jeune",
+    "german": "jung"
+  },
+  {
+    "id": 153,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "âgé, -e / vieux, vieille",
+    "german": "alt"
+  },
+  {
+    "id": 154,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "juste",
+    "german": "fair"
+  },
+  {
+    "id": 155,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "patient, -e",
+    "german": "geduldig"
+  },
+  {
+    "id": 156,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "intéressant, -e",
+    "german": "interessant"
+  },
+  {
+    "id": 157,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "amusant, -e",
+    "german": "lustig"
+  },
+  {
+    "id": 158,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "sévère",
+    "german": "streng"
+  },
+  {
+    "id": 159,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "sympathique",
+    "german": "sympathisch"
+  },
+  {
+    "id": 160,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "cool",
+    "german": "cool"
+  },
+  {
+    "id": 161,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "gentil, -le / aimable",
+    "german": "nett"
+  },
+  {
+    "id": 162,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "insolent, -e",
+    "german": "frech"
+  },
+  {
+    "id": 163,
+    "unit": 3,
+    "unit_title": "Meine Lehrer beschreiben",
+    "french": "grand, -e / petit, -e",
+    "german": "gross / klein"
+  },
+  {
+    "id": 21,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "la salle de classe",
+    "german": "das Klassenzimmer, die Klassenzimmer"
+  },
+  {
+    "id": 22,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "la pièce",
+    "german": "das Zimmer, die Zimmer"
+  },
+  {
+    "id": 23,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "Combien de ... ? / Combien de tables sont en classe ?",
+    "german": "Wie viel/e ... ? / Wie viele Tische sind im Klassenzimmer ?"
+  },
+  {
+    "id": 24,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "la chaise",
+    "german": "der Stuhl, die Stühle"
+  },
+  {
+    "id": 25,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "la fenêtre",
+    "german": "das Fenster, die Fenster"
+  },
+  {
+    "id": 26,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "le tableau noir",
+    "german": "die Tafel, die Tafeln"
+  },
+  {
+    "id": 27,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "le canapé",
+    "german": "das Sofa, die Sofas"
+  },
+  {
+    "id": 28,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "l'étagère",
+    "german": "das Regal, die Regale"
+  },
+  {
+    "id": 29,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "la porte",
+    "german": "die Tür, die Türen"
+  },
+  {
+    "id": 30,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "la table",
+    "german": "der Tisch, die Tische"
+  },
+  {
+    "id": 31,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "l'ordinateur",
+    "german": "der Computer, die Computer"
+  },
+  {
+    "id": 32,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "à gauche",
+    "german": "links"
+  },
+  {
+    "id": 33,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "à droite",
+    "german": "rechts"
+  },
+  {
+    "id": 34,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "devant",
+    "german": "vorne"
+  },
+  {
+    "id": 35,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "au fond",
+    "german": "hinten"
+  },
+  {
+    "id": 36,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "au mur",
+    "german": "an der Wand"
+  },
+  {
+    "id": 37,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "dans le coin",
+    "german": "in der Ecke"
+  },
+  {
+    "id": 38,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "au milieu",
+    "german": "in der Mitte"
+  },
+  {
+    "id": 39,
+    "unit": 4,
+    "unit_title": "Mein Klassenzimmer beschreiben",
+    "french": "À droite (contre le mur), il y a ...",
+    "german": "Rechts (an der Wand) ist/sind ..."
+  },
+  {
+    "id": 40,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "le projet",
+    "german": "das Projekt, die Projekte"
+  },
+  {
+    "id": 41,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "le groupe",
+    "german": "die Gruppe, die Gruppen"
+  },
+  {
+    "id": 42,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "le groupe ordinateur",
+    "german": "die Computer-Gruppe, -n"
+  },
+  {
+    "id": 43,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "le groupe de musique (de l'école)",
+    "german": "die Schülerband, -s"
+  },
+  {
+    "id": 44,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "le groupe de cuisine",
+    "german": "die Koch-Gruppe, -n"
+  },
+  {
+    "id": 45,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "Qui participe ?",
+    "german": "Wer macht mit ?"
+  },
+  {
+    "id": 46,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "Qui fait quoi ?",
+    "german": "Wer macht was ?"
+  },
+  {
+    "id": 47,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "Qui a envie ?",
+    "german": "Wer hat Lust ?"
+  },
+  {
+    "id": 48,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "C'est bête ! C'est stupide !",
+    "german": "Das ist doof !"
+  },
+  {
+    "id": 49,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "prendre des photos",
+    "german": "fotografieren, er fotografiert"
+  },
+  {
+    "id": 50,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "Viens donc... ! (impératif)",
+    "german": "Komm doch ... !"
+  },
+  {
+    "id": 51,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "savoir",
+    "german": "wissen, er weiss"
+  },
+  {
+    "id": 52,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "pas encore",
+    "german": "noch nicht"
+  },
+  {
+    "id": 53,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "Je ne sais pas encore.",
+    "german": "Ich weiss noch nicht."
+  },
+  {
+    "id": 54,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "Oui, peut-être.",
+    "german": "Ja, vielleicht."
+  },
+  {
+    "id": 55,
+    "unit": 5,
+    "unit_title": "Wir machen ein Projekt!",
+    "french": "ici",
+    "german": "hier"
+  },
+  {
+    "id": 56,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la pièce, la chambre, la salle",
+    "german": "das Zimmer, die Zimmer"
+  },
+  {
+    "id": 57,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la salle des maîtres, des profs",
+    "german": "das Lehrerzimmer, die Lehrerzimmer"
+  },
+  {
+    "id": 58,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la salle de classe",
+    "german": "das Klassenzimmer, die Klassenzimmer"
+  },
+  {
+    "id": 59,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la pièce, la salle",
+    "german": "der Raum, die Räume"
+  },
+  {
+    "id": 60,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la salle d'informatique",
+    "german": "der Computerraum, die Computerräume"
+  },
+  {
+    "id": 61,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la salle d'arts visuels",
+    "german": "der Kunstraum, die Kunsträume"
+  },
+  {
+    "id": 62,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la bibliothèque",
+    "german": "die Bibliothek, die Bibliotheken"
+  },
+  {
+    "id": 63,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "la salle de sport, de gymnastique",
+    "german": "die Turnhalle, die Turnhallen"
+  },
+  {
+    "id": 64,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "les toilettes",
+    "german": "die Toilette, die Toiletten"
+  },
+  {
+    "id": 65,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "au rez-de-chaussée",
+    "german": "im Erdgeschoss"
+  },
+  {
+    "id": 66,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "au premier étage",
+    "german": "im ersten Stock"
+  },
+  {
+    "id": 67,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "deuxième, troisième, quatrième, ...",
+    "german": "zweite, dritte, vierte, ..."
+  },
+  {
+    "id": 68,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "à côté de",
+    "german": "neben"
+  },
+  {
+    "id": 69,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "à gauche de...",
+    "german": "links neben ..."
+  },
+  {
+    "id": 70,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "à droite de...",
+    "german": "rechts neben..."
+  },
+  {
+    "id": 71,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "à côté de la salle de sport",
+    "german": "neben der Turnhalle"
+  },
+  {
+    "id": 72,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "à côté de la bibliothèque",
+    "german": "neben der Bibliothek"
+  },
+  {
+    "id": 73,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "à côté de la salle des maîtres",
+    "german": "neben dem Lehrerzimmer"
+  },
+  {
+    "id": 74,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "à côté de la classe 8P3",
+    "german": "neben der Klasse 8P3"
+  },
+  {
+    "id": 75,
+    "unit": 6,
+    "unit_title": "Mein Klassenzimmer ist im ersten Stock",
+    "french": "- Excusez-moi, où sont les toilettes ? - Les toilettes sont au 1er étage à gauche de la Bibliothèque. - Merci beaucoup !",
+    "german": "- Entschuldigung, wo sind die Toiletten ? - Die Toilette ist im ersten Stock links neben der Bibliothek. - Vielen Dank !"
+  },
+  {
+    "id": 1,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Quel temps fait-il?",
+    "german": "Wie ist das Wetter?"
+  },
+  {
+    "id": 2,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "froid / chaud / Il fait froid. / Il fait chaud.",
+    "german": "kalt / warm / Es ist kalt. / Es ist warm."
+  },
+  {
+    "id": 3,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "J'ai froid / chaud. / Je n'ai pas froid / chaud.",
+    "german": "Mir ist kalt / warm. / Mir ist nicht kalt / warm."
+  },
+  {
+    "id": 4,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Il pleut.",
+    "german": "Es regnet."
+  },
+  {
+    "id": 5,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Le ciel est nuageux. Il y a des nuages.",
+    "german": "Es ist bewölkt."
+  },
+  {
+    "id": 6,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Il neige.",
+    "german": "Es schneit."
+  },
+  {
+    "id": 7,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Il y a du vent.",
+    "german": "Es ist windig."
+  },
+  {
+    "id": 8,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Le soleil brille.",
+    "german": "Die Sonne scheint."
+  },
+  {
+    "id": 9,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Il fait beau.",
+    "german": "Es ist schön."
+  },
+  {
+    "id": 10,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "beau, belle",
+    "german": "schön"
+  },
+  {
+    "id": 11,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Il fait 10 degrés.",
+    "german": "Die Temperatur ist 10 Grad."
+  },
+  {
+    "id": 12,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "mouillé, mouillée",
+    "german": "nass"
+  },
+  {
+    "id": 13,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "mettre (un vêtement)",
+    "german": "anziehen, er zieht … an"
+  },
+  {
+    "id": 14,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "Que mets-tu? (vêtements)",
+    "german": "Was ziehst du an?"
+  },
+  {
+    "id": 15,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "la veste",
+    "german": "die Jacke, die Jacken"
+  },
+  {
+    "id": 16,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "l'écharpe",
+    "german": "der Schal, die Schals"
+  },
+  {
+    "id": 17,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "le bonnet",
+    "german": "die Mütze, die Mützen"
+  },
+  {
+    "id": 18,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "le pull-over",
+    "german": "der Pullover, die Pullover"
+  },
+  {
+    "id": 19,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "le T-shirt",
+    "german": "das T-Shirt, die T-Shirts"
+  },
+  {
+    "id": 20,
+    "unit": 7,
+    "unit_title": "Wie ist das Wetter?",
+    "french": "le jeans",
+    "german": "die Jeans, die Jeans"
+  },
+  {
+    "id": 76,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "Qu'est-ce que tu aimes faire ?",
+    "german": "Was machst du gern ?"
+  },
+  {
+    "id": 77,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "jouer au hockey sur glace",
+    "german": "Eishockey spielen"
+  },
+  {
+    "id": 78,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "rencontrer des amis",
+    "german": "Freunde treffen"
+  },
+  {
+    "id": 79,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "lire des livres",
+    "german": "Bücher lesen"
+  },
+  {
+    "id": 80,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "surfer sur internet",
+    "german": "im Internet surfen"
+  },
+  {
+    "id": 81,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "aller au cinéma",
+    "german": "ins Kino gehen"
+  },
+  {
+    "id": 82,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "écouter de la musique",
+    "german": "Musik hören"
+  },
+  {
+    "id": 83,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "faire de la musique",
+    "german": "Musik machen"
+  },
+  {
+    "id": 84,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "rencontrer",
+    "german": "treffen, er trifft"
+  },
+  {
+    "id": 85,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "aimer (faire)",
+    "german": "gern (machen)"
+  },
+  {
+    "id": 86,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "préférer (faire)",
+    "german": "lieber (machen)"
+  },
+  {
+    "id": 87,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "aimer le plus (faire)",
+    "german": "am liebsten (machen)"
+  },
+  {
+    "id": 88,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "l'activité de loisirs",
+    "german": "die Freizeitaktivität, -en"
+  },
+  {
+    "id": 89,
+    "unit": 8,
+    "unit_title": "Freizeitaktivitäten",
+    "french": "chaque jour, tous les jours",
+    "german": "jeden Tag"
+  },
+  {
+    "id": 90,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "Que peux-tu faire ?",
+    "german": "Was kannst du machen ?"
+  },
+  {
+    "id": 91,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "Je peux bien ... (activité/verbe)",
+    "german": "Ich kann gut ... (Aktivität/Verb)"
+  },
+  {
+    "id": 92,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "Qu'aimerais-tu faire ?",
+    "german": "Was möchtest du machen ?"
+  },
+  {
+    "id": 93,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "le cours",
+    "german": "der Kurs, -e"
+  },
+  {
+    "id": 94,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "on (pronom)",
+    "german": "man"
+  },
+  {
+    "id": 95,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "pouvoir",
+    "german": "können : ich kann, du kannst, er kann"
+  },
+  {
+    "id": 96,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "aimerait bien",
+    "german": "möchten : ich möchte, du möchtest, er möchte"
+  },
+  {
+    "id": 97,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "faire du judo",
+    "german": "Judo machen"
+  },
+  {
+    "id": 98,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "faire de l'escalade",
+    "german": "klettern"
+  },
+  {
+    "id": 99,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "faire la connaissance d'amis",
+    "german": "Freunde kennenlernen"
+  },
+  {
+    "id": 100,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "téléphoner",
+    "german": "telefonieren"
+  },
+  {
+    "id": 101,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "courir",
+    "german": "laufen, er läuft"
+  },
+  {
+    "id": 102,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "collectionner",
+    "german": "sammeln"
+  },
+  {
+    "id": 103,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "s'amuser beaucoup",
+    "german": "viel Spass haben"
+  },
+  {
+    "id": 104,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "les heures d'ouverture",
+    "german": "die Öffnungszeiten"
+  },
+  {
+    "id": 105,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "tous les jours",
+    "german": "täglich"
+  },
+  {
+    "id": 106,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "ouvert, ouverte",
+    "german": "geöffnet"
+  },
+  {
+    "id": 107,
+    "unit": 9,
+    "unit_title": "Was kannst du machen?",
+    "french": "fermé, fermée",
+    "german": "geschlossen"
+  }
+]
