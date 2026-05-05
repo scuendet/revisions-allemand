@@ -47,7 +47,7 @@ async function blobRead<T>(filename: string, fallback: T): Promise<T> {
   const token = resolveBlobReadWriteToken()
   if (!token) return fallback
   try {
-    const out = await get(filename, { access: 'public', token })
+    const out = await get(filename, { access: 'private', token, useCache: false })
     if (!out || out.statusCode !== 200 || !out.stream) return fallback
     const text = await new Response(out.stream).text()
     if (!text.trim()) return fallback
@@ -66,7 +66,7 @@ async function blobWrite<T>(filename: string, data: T): Promise<void> {
     )
   }
   await put(filename, JSON.stringify(data), {
-    access: 'public',
+    access: 'private',
     addRandomSuffix: false,
     allowOverwrite: true,
     contentType: 'application/json',

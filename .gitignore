@@ -5,6 +5,7 @@
 /data/quiz-sessions-*.json
 .env.local
 .env
+.env.vercel.pull
 node_modules/
 .next/
 .vercel

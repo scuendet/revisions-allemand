@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
+import { UnitVocabPractice } from '@/components/UnitVocabPractice'
 
 interface WordStat {
   vocab_id: number
@@ -43,6 +44,28 @@ interface Tooltip {
   x: number
   y: number
   lines: string[]
+}
+
+interface MathProgress {
+  summary: {
+    total_attempts: number
+    total_correct: number
+    total_seconds: number
+    timer_attempts: number
+    timer_correct: number
+    sessions: number
+  }
+  by_table: Array<{
+    table: number
+    attempts: number
+    correct: number
+    flashcard_attempts: number
+    audio_attempts: number
+    typing_attempts: number
+    timer_attempts: number
+    timer_correct: number
+    last_attempted: string | null
+  }>
 }
 
 function wordColor(total: number, correct: number): string {
@@ -87,9 +110,11 @@ export default function ProgressPage() {
   const [words, setWords] = useState<WordStat[]>([])
   const [verbs, setVerbs] = useState<VerbStat[]>([])
   const [unitTimes, setUnitTimes] = useState<UnitTime[]>([])
+  const [math, setMath] = useState<MathProgress | null>(null)
   const [loading, setLoading] = useState(true)
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [detailUnit, setDetailUnit] = useState<number | 'all'>('all')
+  const [branch, setBranch] = useState<'global' | 'allemand' | 'math' | 'français'>('global')
   const tooltipRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -97,10 +122,12 @@ export default function ProgressPage() {
       fetch(`/api/progress/${userId}`).then(r => r.json()),
       fetch(`/api/verbs/progress/${userId}`).then(r => r.json()),
       fetch(`/api/progress/${userId}/time`).then(r => r.json()),
-    ]).then(([w, v, t]) => {
+      fetch(`/api/math/progress/${userId}`).then(r => r.json()),
+    ]).then(([w, v, t, m]) => {
       setWords(w)
       setVerbs(v)
       setUnitTimes(t)
+      setMath(m)
       setLoading(false)
     })
   }, [userId])
@@ -120,6 +147,11 @@ export default function ProgressPage() {
   // Time stats
   const totalSeconds = unitTimes.reduce((s, t) => s + t.total_seconds, 0)
   const timeByUnit = new Map(unitTimes.map(t => [t.unit, t]))
+  const mathAttempts = math?.summary.total_attempts ?? 0
+  const mathCorrect = math?.summary.total_correct ?? 0
+  const mathSeconds = math?.summary.total_seconds ?? 0
+  const mathSessions = math?.summary.sessions ?? 0
+  const globalSeconds = totalSeconds + mathSeconds
 
   // Group words by unit
   const units = Array.from(new Set(words.map(w => w.unit))).sort((a, b) => a - b)
@@ -177,6 +209,7 @@ export default function ProgressPage() {
   }
 
   const filteredWords = detailUnit === 'all' ? words : words.filter(w => w.unit === detailUnit)
+  const detailUnitTitle = detailUnit !== 'all' ? words.find(w => w.unit === detailUnit)?.unit_title : undefined
 
   // Legend items
   const legend = [
@@ -203,44 +236,140 @@ export default function ProgressPage() {
       <div className="max-w-3xl mx-auto">
 
         {/* Header */}
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex flex-wrap items-center gap-4 mb-3">
           <Link href={`/${userId}`} className="text-gray-400 hover:text-primary transition-colors font-semibold">← Retour</Link>
-          <h1 className="text-2xl font-extrabold text-primary">Tableau de bord</h1>
+          <h1 className="text-2xl font-extrabold text-primary">Vue détaillée des progrès</h1>
+          <div className="ml-auto flex flex-wrap items-center justify-end gap-2">
+            <Link
+              href={`/${userId}/french/dashboard`}
+              className="text-sm font-semibold text-rose-800 border border-rose-300 rounded-xl px-3 py-1.5 bg-rose-50 hover:bg-rose-100 transition-colors"
+            >
+              Français — conjugaison →
+            </Link>
+            <Link
+              href={`/${userId}/checks`}
+              className="text-sm font-semibold text-amber-800 border border-amber-300 rounded-xl px-3 py-1.5 bg-amber-50 hover:bg-amber-100 transition-colors"
+            >
+              Chèques
+            </Link>
+          </div>
+        </div>
+        <div className="inline-flex rounded-xl border border-gray-200 bg-white p-1 mb-6">
+          <button
+            onClick={() => setBranch('global')}
+            className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition-colors ${branch === 'global' ? 'bg-primary text-white' : 'text-gray-500 hover:text-primary'}`}
+          >
+            Global
+          </button>
+          <button
+            onClick={() => setBranch('allemand')}
+            className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition-colors ${branch === 'allemand' ? 'bg-primary text-white' : 'text-gray-500 hover:text-primary'}`}
+          >
+            Allemand
+          </button>
+          <button
+            onClick={() => setBranch('math')}
+            className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition-colors ${branch === 'math' ? 'bg-primary text-white' : 'text-gray-500 hover:text-primary'}`}
+          >
+            Math
+          </button>
+          <button
+            onClick={() => setBranch('français')}
+            className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition-colors ${branch === 'français' ? 'bg-rose-600 text-white' : 'text-gray-500 hover:text-rose-600'}`}
+          >
+            Français
+          </button>
         </div>
 
-        {/* ── Global stats ── */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-            <p className="text-3xl font-extrabold text-emerald-500">{mastered}</p>
-            <p className="text-xs font-semibold text-gray-400 mt-0.5">Mots maîtrisés</p>
-            <p className="text-xs text-gray-300 mt-0.5">sur {totalWords}</p>
-          </div>
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-            <p className="text-3xl font-extrabold text-rose-400">{toReview}</p>
-            <p className="text-xs font-semibold text-gray-400 mt-0.5">À revoir</p>
-            <p className="text-xs text-gray-300 mt-0.5">{neverTried} jamais tentés</p>
-          </div>
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-            <p className="text-3xl font-extrabold text-primary">
-              {totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) + '%' : '—'}
+        {branch === 'français' && (
+          <div className="mb-8 rounded-2xl border border-rose-100 bg-white p-6 shadow-sm">
+            <h2 className="font-extrabold text-primary text-lg">Conjugaison française</h2>
+            <p className="mt-2 text-sm text-gray-500">
+              Carte verbes × temps, stats par jour, sessions et lien vers une nouvelle série.
             </p>
-            <p className="text-xs font-semibold text-gray-400 mt-0.5">Taux global</p>
-            <p className="text-xs text-gray-300 mt-0.5">{totalAttempts} essais</p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href={`/${userId}/french/dashboard`}
+                className="inline-flex rounded-xl bg-rose-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-rose-700 transition-colors"
+              >
+                Ouvrir le dashboard →
+              </Link>
+              <Link
+                href={`/${userId}/french`}
+                className="inline-flex rounded-xl border-2 border-rose-200 px-5 py-2.5 text-sm font-bold text-rose-800 hover:bg-rose-50 transition-colors"
+              >
+                Configurer une série →
+              </Link>
+            </div>
           </div>
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-            <p className="text-3xl font-extrabold text-accent">{masteredVerbs}</p>
-            <p className="text-xs font-semibold text-gray-400 mt-0.5">Verbes maîtrisés</p>
-            <p className="text-xs text-gray-300 mt-0.5">sur {verbs.length}</p>
+        )}
+
+        {(branch === 'global' || branch === 'allemand') && (
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-emerald-500">{mastered}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Mots maîtrisés</p>
+              <p className="text-xs text-gray-300 mt-0.5">sur {totalWords}</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-rose-400">{toReview}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">À revoir</p>
+              <p className="text-xs text-gray-300 mt-0.5">{neverTried} jamais tentés</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-primary">
+                {totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) + '%' : '—'}
+              </p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Taux allemand</p>
+              <p className="text-xs text-gray-300 mt-0.5">{totalAttempts} essais</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-accent">{masteredVerbs}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Verbes maîtrisés</p>
+              <p className="text-xs text-gray-300 mt-0.5">sur {verbs.length}</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-primary">{fmtTime(totalSeconds)}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Temps allemand</p>
+              <p className="text-xs text-gray-300 mt-0.5">révision</p>
+            </div>
           </div>
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
-            <p className="text-3xl font-extrabold text-primary">{fmtTime(totalSeconds)}</p>
-            <p className="text-xs font-semibold text-gray-400 mt-0.5">Temps total</p>
-            <p className="text-xs text-gray-300 mt-0.5">de révision</p>
+        )}
+
+        {(branch === 'global' || branch === 'math') && (
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-primary">{mathAttempts}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Essais math</p>
+              <p className="text-xs text-gray-300 mt-0.5">tables</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-emerald-500">
+                {mathAttempts > 0 ? Math.round((mathCorrect / mathAttempts) * 100) + '%' : '—'}
+              </p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Taux math</p>
+              <p className="text-xs text-gray-300 mt-0.5">{mathCorrect} correctes</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-accent">{mathSessions}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Sessions math</p>
+              <p className="text-xs text-gray-300 mt-0.5">complétées</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-primary">{fmtTime(mathSeconds)}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Temps math</p>
+              <p className="text-xs text-gray-300 mt-0.5">révision</p>
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+              <p className="text-3xl font-extrabold text-primary">{fmtTime(globalSeconds)}</p>
+              <p className="text-xs font-semibold text-gray-400 mt-0.5">Temps global</p>
+              <p className="text-xs text-gray-300 mt-0.5">allemand + math</p>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* ── Vocabulary heatmap ── */}
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
+        {(branch === 'global' || branch === 'allemand') && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-extrabold text-primary text-lg">Vocabulaire par unité</h2>
             {/* Legend */}
@@ -279,6 +408,7 @@ export default function ProgressPage() {
                       style={{ width: `${unitWords.length > 0 ? (unitMastered / unitWords.length) * 100 : 0}%` }}
                     />
                   </div>
+                  <UnitVocabPractice userId={userId} unit={unit} />
                   {/* Word cells */}
                   <div className="flex flex-wrap gap-1.5">
                     {unitWords.map(w => (
@@ -294,10 +424,10 @@ export default function ProgressPage() {
               )
             })}
           </div>
-        </div>
+        </div>}
 
         {/* ── Verb heatmap ── */}
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-8">
+        {(branch === 'global' || branch === 'allemand') && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-8">
           <h2 className="font-extrabold text-primary text-lg mb-4">Conjugaison des verbes</h2>
           <div className="space-y-5">
             {verbUnits.map(unit => {
@@ -333,10 +463,21 @@ export default function ProgressPage() {
               )
             })}
           </div>
-        </div>
+        </div>}
 
         {/* ── Word detail table ── */}
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+        {(branch === 'global' || branch === 'allemand') && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+          {detailUnit !== 'all' && (
+            <div className="p-4 border-b border-gray-100 bg-accent/5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <p className="text-sm font-semibold text-primary">
+                Unité {detailUnit}
+                {detailUnitTitle && (
+                  <span className="font-normal text-gray-500"> — {detailUnitTitle}</span>
+                )}
+              </p>
+              <UnitVocabPractice userId={userId} unit={detailUnit} />
+            </div>
+          )}
           <div className="p-4 border-b border-gray-100 flex items-center gap-2 flex-wrap">
             <h2 className="font-extrabold text-primary text-base mr-2">Détail des mots</h2>
             <button
@@ -393,7 +534,88 @@ export default function ProgressPage() {
               })}
             </tbody>
           </table>
-        </div>
+        </div>}
+
+        {(branch === 'global' || branch === 'math') && (
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mt-4">
+            <h2 className="font-extrabold text-primary text-lg mb-4">Math — tables par série</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              {(math?.by_table ?? []).map(t => {
+                const rate = t.attempts > 0 ? t.correct / t.attempts : 0
+                const bg = t.attempts === 0
+                  ? 'bg-gray-50 border-gray-200 text-gray-400'
+                  : rate >= 0.7
+                    ? 'bg-emerald-50 border-emerald-200 text-emerald-700'
+                    : rate >= 0.5
+                      ? 'bg-amber-50 border-amber-200 text-amber-700'
+                      : 'bg-rose-50 border-rose-200 text-rose-700'
+                return (
+                  <div key={t.table} className={`rounded-xl border p-3 ${bg}`}>
+                    <p className="text-xs font-semibold uppercase tracking-wide">Table de {t.table}</p>
+                    <p className="text-lg font-extrabold mt-1">
+                      {t.attempts > 0 ? Math.round((t.correct / t.attempts) * 100) + '%' : '—'}
+                    </p>
+                    <p className="text-xs mt-0.5">{t.correct}/{t.attempts} correctes</p>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="mt-6 border-t border-gray-100 pt-4">
+              <h3 className="font-extrabold text-primary text-base mb-3">Résultats détaillés des livrets</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-gray-100 bg-gray-50">
+                      <th className="text-left px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Livret</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Total</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Correct</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Taux</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">🃏</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">🔊</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">✍️</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Timer ON</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(math?.by_table ?? []).map(t => {
+                      const rate = t.attempts > 0 ? t.correct / t.attempts : null
+                      const timerRate = t.timer_attempts > 0 ? t.timer_correct / t.timer_attempts : null
+                      const rowBg =
+                        t.attempts === 0
+                          ? ''
+                          : rate !== null && rate >= 0.7
+                            ? 'bg-emerald-50'
+                            : rate !== null && rate < 0.5
+                              ? 'bg-rose-50'
+                              : 'bg-amber-50'
+                      return (
+                        <tr key={`detail-${t.table}`} className={`border-b border-gray-50 last:border-0 ${rowBg}`}>
+                          <td className="px-3 py-2.5 font-semibold text-primary text-xs">Table de {t.table}</td>
+                          <td className="px-3 py-2.5 text-center text-xs text-gray-600">{t.attempts}</td>
+                          <td className="px-3 py-2.5 text-center text-xs text-gray-600">{t.correct}</td>
+                          <td className="px-3 py-2.5 text-center text-xs font-bold">
+                            <span className={rate === null ? 'text-gray-300' : rate >= 0.7 ? 'text-emerald-500' : rate < 0.5 ? 'text-rose-400' : 'text-amber-500'}>
+                              {pct(t.correct, t.attempts)}
+                            </span>
+                          </td>
+                          <td className="px-3 py-2.5 text-center text-xs text-gray-600">{t.flashcard_attempts}</td>
+                          <td className="px-3 py-2.5 text-center text-xs text-gray-600">{t.audio_attempts}</td>
+                          <td className="px-3 py-2.5 text-center text-xs text-gray-600">{t.typing_attempts}</td>
+                          <td className="px-3 py-2.5 text-center text-xs">
+                            <span className={timerRate === null ? 'text-gray-300' : timerRate >= 0.7 ? 'text-emerald-500 font-bold' : timerRate < 0.5 ? 'text-rose-400 font-bold' : 'text-amber-500 font-bold'}>
+                              {timerRate === null ? '—' : `${Math.round(timerRate * 100)}%`}
+                            </span>
+                          </td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* ── Floating tooltip ── */}

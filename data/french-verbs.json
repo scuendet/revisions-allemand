@@ -1,0 +1,6170 @@
+[
+  {
+    "verb": "avoir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "ai"
+  },
+  {
+    "verb": "avoir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "as"
+  },
+  {
+    "verb": "avoir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a"
+  },
+  {
+    "verb": "avoir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "avons"
+  },
+  {
+    "verb": "avoir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "avez"
+  },
+  {
+    "verb": "avoir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont"
+  },
+  {
+    "verb": "avoir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "avais"
+  },
+  {
+    "verb": "avoir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "avais"
+  },
+  {
+    "verb": "avoir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait"
+  },
+  {
+    "verb": "avoir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "avions"
+  },
+  {
+    "verb": "avoir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez"
+  },
+  {
+    "verb": "avoir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient"
+  },
+  {
+    "verb": "avoir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "aurais"
+  },
+  {
+    "verb": "avoir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "aurais"
+  },
+  {
+    "verb": "avoir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aurait"
+  },
+  {
+    "verb": "avoir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "aurions"
+  },
+  {
+    "verb": "avoir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "auriez"
+  },
+  {
+    "verb": "avoir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "auraient"
+  },
+  {
+    "verb": "avoir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "aurai"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "auras"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "aurons"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "aurez"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront"
+  },
+  {
+    "verb": "avoir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "aie"
+  },
+  {
+    "verb": "avoir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "ayons"
+  },
+  {
+    "verb": "avoir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "ayez"
+  },
+  {
+    "verb": "être",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "suis"
+  },
+  {
+    "verb": "être",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "es"
+  },
+  {
+    "verb": "être",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "est"
+  },
+  {
+    "verb": "être",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "sommes"
+  },
+  {
+    "verb": "être",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "êtes"
+  },
+  {
+    "verb": "être",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "sont"
+  },
+  {
+    "verb": "être",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "étais"
+  },
+  {
+    "verb": "être",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "étais"
+  },
+  {
+    "verb": "être",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "était"
+  },
+  {
+    "verb": "être",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "étions"
+  },
+  {
+    "verb": "être",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "étiez"
+  },
+  {
+    "verb": "être",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "étaient"
+  },
+  {
+    "verb": "être",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "serais"
+  },
+  {
+    "verb": "être",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "serais"
+  },
+  {
+    "verb": "être",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "serait"
+  },
+  {
+    "verb": "être",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "serions"
+  },
+  {
+    "verb": "être",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "seriez"
+  },
+  {
+    "verb": "être",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "seraient"
+  },
+  {
+    "verb": "être",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai été"
+  },
+  {
+    "verb": "être",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as été"
+  },
+  {
+    "verb": "être",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a été"
+  },
+  {
+    "verb": "être",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons été"
+  },
+  {
+    "verb": "être",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez été"
+  },
+  {
+    "verb": "être",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont été"
+  },
+  {
+    "verb": "être",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "serai"
+  },
+  {
+    "verb": "être",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "seras"
+  },
+  {
+    "verb": "être",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sera"
+  },
+  {
+    "verb": "être",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "serons"
+  },
+  {
+    "verb": "être",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "serez"
+  },
+  {
+    "verb": "être",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "seront"
+  },
+  {
+    "verb": "être",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "sois"
+  },
+  {
+    "verb": "être",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "soyons"
+  },
+  {
+    "verb": "être",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "soyez"
+  },
+  {
+    "verb": "chanter",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "chante"
+  },
+  {
+    "verb": "chanter",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "chantes"
+  },
+  {
+    "verb": "chanter",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "chante"
+  },
+  {
+    "verb": "chanter",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "chantons"
+  },
+  {
+    "verb": "chanter",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "chantez"
+  },
+  {
+    "verb": "chanter",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "chantent"
+  },
+  {
+    "verb": "chanter",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "chantais"
+  },
+  {
+    "verb": "chanter",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "chantais"
+  },
+  {
+    "verb": "chanter",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "chantait"
+  },
+  {
+    "verb": "chanter",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "chantions"
+  },
+  {
+    "verb": "chanter",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "chantiez"
+  },
+  {
+    "verb": "chanter",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "chantaient"
+  },
+  {
+    "verb": "chanter",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "chanterais"
+  },
+  {
+    "verb": "chanter",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "chanterais"
+  },
+  {
+    "verb": "chanter",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "chanterait"
+  },
+  {
+    "verb": "chanter",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "chanterions"
+  },
+  {
+    "verb": "chanter",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "chanteriez"
+  },
+  {
+    "verb": "chanter",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "chanteraient"
+  },
+  {
+    "verb": "chanter",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "chanterai"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "chanteras"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "chantera"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "chanterons"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "chanterez"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "chanteront"
+  },
+  {
+    "verb": "chanter",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "chante"
+  },
+  {
+    "verb": "chanter",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "chantons"
+  },
+  {
+    "verb": "chanter",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "chantez"
+  },
+  {
+    "verb": "oublier",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "oublie"
+  },
+  {
+    "verb": "oublier",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "oublies"
+  },
+  {
+    "verb": "oublier",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "oublie"
+  },
+  {
+    "verb": "oublier",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "oublions"
+  },
+  {
+    "verb": "oublier",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "oubliez"
+  },
+  {
+    "verb": "oublier",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "oublient"
+  },
+  {
+    "verb": "oublier",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "oubliais"
+  },
+  {
+    "verb": "oublier",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "oubliais"
+  },
+  {
+    "verb": "oublier",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "oubliait"
+  },
+  {
+    "verb": "oublier",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "oublions"
+  },
+  {
+    "verb": "oublier",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "oubliez"
+  },
+  {
+    "verb": "oublier",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "oubliaient"
+  },
+  {
+    "verb": "oublier",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "oublierais"
+  },
+  {
+    "verb": "oublier",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "oublierais"
+  },
+  {
+    "verb": "oublier",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "oublierait"
+  },
+  {
+    "verb": "oublier",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "oublierions"
+  },
+  {
+    "verb": "oublier",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "oublieriez"
+  },
+  {
+    "verb": "oublier",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "oublieraient"
+  },
+  {
+    "verb": "oublier",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "oublierai"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "oublieras"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "oubliera"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "oublierons"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "oublierez"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "oublieront"
+  },
+  {
+    "verb": "oublier",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "oublie"
+  },
+  {
+    "verb": "oublier",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "oublions"
+  },
+  {
+    "verb": "oublier",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "oubliez"
+  },
+  {
+    "verb": "manger",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "mange"
+  },
+  {
+    "verb": "manger",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "manges"
+  },
+  {
+    "verb": "manger",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "mange"
+  },
+  {
+    "verb": "manger",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "mangeons"
+  },
+  {
+    "verb": "manger",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "mangez"
+  },
+  {
+    "verb": "manger",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "mangent"
+  },
+  {
+    "verb": "manger",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "mangeais"
+  },
+  {
+    "verb": "manger",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "mangeais"
+  },
+  {
+    "verb": "manger",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "mangeait"
+  },
+  {
+    "verb": "manger",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "mangions"
+  },
+  {
+    "verb": "manger",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "mangiez"
+  },
+  {
+    "verb": "manger",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "mangeaient"
+  },
+  {
+    "verb": "manger",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "mangerais"
+  },
+  {
+    "verb": "manger",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "mangerais"
+  },
+  {
+    "verb": "manger",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "mangerait"
+  },
+  {
+    "verb": "manger",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "mangerions"
+  },
+  {
+    "verb": "manger",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "mangeriez"
+  },
+  {
+    "verb": "manger",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "mangeraient"
+  },
+  {
+    "verb": "manger",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "mangerai"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "mangeras"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "mangera"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "mangerons"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "mangerez"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "mangeront"
+  },
+  {
+    "verb": "manger",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "mange"
+  },
+  {
+    "verb": "manger",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "mangeons"
+  },
+  {
+    "verb": "manger",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "mangez"
+  },
+  {
+    "verb": "commencer",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "commence"
+  },
+  {
+    "verb": "commencer",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "commences"
+  },
+  {
+    "verb": "commencer",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "commence"
+  },
+  {
+    "verb": "commencer",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "commençons"
+  },
+  {
+    "verb": "commencer",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "commencez"
+  },
+  {
+    "verb": "commencer",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "commencent"
+  },
+  {
+    "verb": "commencer",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "commençais"
+  },
+  {
+    "verb": "commencer",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "commençais"
+  },
+  {
+    "verb": "commencer",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "commençait"
+  },
+  {
+    "verb": "commencer",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "commencions"
+  },
+  {
+    "verb": "commencer",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "commenciez"
+  },
+  {
+    "verb": "commencer",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "commençaient"
+  },
+  {
+    "verb": "commencer",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "commencerais"
+  },
+  {
+    "verb": "commencer",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "commencerais"
+  },
+  {
+    "verb": "commencer",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "commencerait"
+  },
+  {
+    "verb": "commencer",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "commencerions"
+  },
+  {
+    "verb": "commencer",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "commenceriez"
+  },
+  {
+    "verb": "commencer",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "commenceraient"
+  },
+  {
+    "verb": "commencer",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "commencerai"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "commenceras"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "commencera"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "commencerons"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "commencerez"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "commenceront"
+  },
+  {
+    "verb": "commencer",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "commence"
+  },
+  {
+    "verb": "commencer",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "commençons"
+  },
+  {
+    "verb": "commencer",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "commencez"
+  },
+  {
+    "verb": "peler",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "pèle"
+  },
+  {
+    "verb": "peler",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "pèles"
+  },
+  {
+    "verb": "peler",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pèle"
+  },
+  {
+    "verb": "peler",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "pelons"
+  },
+  {
+    "verb": "peler",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "pelez"
+  },
+  {
+    "verb": "peler",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "pèlent"
+  },
+  {
+    "verb": "peler",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "pelais"
+  },
+  {
+    "verb": "peler",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "pelais"
+  },
+  {
+    "verb": "peler",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pelait"
+  },
+  {
+    "verb": "peler",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "pelions"
+  },
+  {
+    "verb": "peler",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "peliez"
+  },
+  {
+    "verb": "peler",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "pelaient"
+  },
+  {
+    "verb": "peler",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "pèlerais"
+  },
+  {
+    "verb": "peler",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "pèlerais"
+  },
+  {
+    "verb": "peler",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pèlerait"
+  },
+  {
+    "verb": "peler",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "pèlerions"
+  },
+  {
+    "verb": "peler",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "pèleriez"
+  },
+  {
+    "verb": "peler",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "pèleraient"
+  },
+  {
+    "verb": "peler",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "pèlerai"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "pèleras"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pèlera"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "pèlerons"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "pèlerez"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "pèleront"
+  },
+  {
+    "verb": "peler",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "pèle"
+  },
+  {
+    "verb": "peler",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "pelons"
+  },
+  {
+    "verb": "peler",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "pelez"
+  },
+  {
+    "verb": "acheter",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "achète"
+  },
+  {
+    "verb": "acheter",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "achètes"
+  },
+  {
+    "verb": "acheter",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "achète"
+  },
+  {
+    "verb": "acheter",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "achetons"
+  },
+  {
+    "verb": "acheter",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "achetez"
+  },
+  {
+    "verb": "acheter",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "achètent"
+  },
+  {
+    "verb": "acheter",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "achetais"
+  },
+  {
+    "verb": "acheter",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "achetais"
+  },
+  {
+    "verb": "acheter",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "achetait"
+  },
+  {
+    "verb": "acheter",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "achetions"
+  },
+  {
+    "verb": "acheter",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "achetiez"
+  },
+  {
+    "verb": "acheter",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "achetaient"
+  },
+  {
+    "verb": "acheter",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "achèterais"
+  },
+  {
+    "verb": "acheter",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "achèterais"
+  },
+  {
+    "verb": "acheter",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "achèterait"
+  },
+  {
+    "verb": "acheter",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "achèterions"
+  },
+  {
+    "verb": "acheter",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "achèteriez"
+  },
+  {
+    "verb": "acheter",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "achèteraient"
+  },
+  {
+    "verb": "acheter",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "achèterai"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "achèteras"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "achètera"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "achèterons"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "achèterez"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "achèteront"
+  },
+  {
+    "verb": "acheter",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "achète"
+  },
+  {
+    "verb": "acheter",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "achetons"
+  },
+  {
+    "verb": "acheter",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "achetez"
+  },
+  {
+    "verb": "employer",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "emploie"
+  },
+  {
+    "verb": "employer",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "emploies"
+  },
+  {
+    "verb": "employer",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "emploie"
+  },
+  {
+    "verb": "employer",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "employons"
+  },
+  {
+    "verb": "employer",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "employez"
+  },
+  {
+    "verb": "employer",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "emploient"
+  },
+  {
+    "verb": "employer",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "employais"
+  },
+  {
+    "verb": "employer",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "employais"
+  },
+  {
+    "verb": "employer",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "employait"
+  },
+  {
+    "verb": "employer",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "employions"
+  },
+  {
+    "verb": "employer",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "employiez"
+  },
+  {
+    "verb": "employer",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "employaient"
+  },
+  {
+    "verb": "employer",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "emploierais"
+  },
+  {
+    "verb": "employer",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "emploierais"
+  },
+  {
+    "verb": "employer",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "emploierait"
+  },
+  {
+    "verb": "employer",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "emploierions"
+  },
+  {
+    "verb": "employer",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "emploieriez"
+  },
+  {
+    "verb": "employer",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "emploieraient"
+  },
+  {
+    "verb": "employer",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "emploierai"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "emploieras"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "emploiera"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "emploierons"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "emploierez"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "emploieront"
+  },
+  {
+    "verb": "employer",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "emploie"
+  },
+  {
+    "verb": "employer",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "employons"
+  },
+  {
+    "verb": "employer",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "employez"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "envoie"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "envoies"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "envoie"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "envoyons"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "envoyez"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "envoient"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "envoyais"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "envoyais"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "envoyait"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "envoyions"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "envoyiez"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "envoyaient"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "enverrais"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "enverrais"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "enverrait"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "enverrions"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "enverriez"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "enverraient"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "enverrai"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "enverras"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "enverra"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "enverrons"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "enverrez"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "enverront"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "envoie"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "envoyons"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "envoyez"
+  },
+  {
+    "verb": "payer",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "paie"
+  },
+  {
+    "verb": "payer",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "paies"
+  },
+  {
+    "verb": "payer",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "paie"
+  },
+  {
+    "verb": "payer",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "payons"
+  },
+  {
+    "verb": "payer",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "payez"
+  },
+  {
+    "verb": "payer",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "paient"
+  },
+  {
+    "verb": "payer",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "payais"
+  },
+  {
+    "verb": "payer",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "payais"
+  },
+  {
+    "verb": "payer",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "payait"
+  },
+  {
+    "verb": "payer",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "payions"
+  },
+  {
+    "verb": "payer",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "payiez"
+  },
+  {
+    "verb": "payer",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "payaient"
+  },
+  {
+    "verb": "payer",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "paierais"
+  },
+  {
+    "verb": "payer",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "paierais"
+  },
+  {
+    "verb": "payer",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "paierait"
+  },
+  {
+    "verb": "payer",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "paierions"
+  },
+  {
+    "verb": "payer",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "paieriez"
+  },
+  {
+    "verb": "payer",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "paieraient"
+  },
+  {
+    "verb": "payer",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "paierai"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "paieras"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "paiera"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "paierons"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "paierez"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "paieront"
+  },
+  {
+    "verb": "payer",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "paie"
+  },
+  {
+    "verb": "payer",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "payons"
+  },
+  {
+    "verb": "payer",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "payez"
+  },
+  {
+    "verb": "aller",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "vais"
+  },
+  {
+    "verb": "aller",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "vas"
+  },
+  {
+    "verb": "aller",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "va"
+  },
+  {
+    "verb": "aller",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "allons"
+  },
+  {
+    "verb": "aller",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "allez"
+  },
+  {
+    "verb": "aller",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "vont"
+  },
+  {
+    "verb": "aller",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "allais"
+  },
+  {
+    "verb": "aller",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "allais"
+  },
+  {
+    "verb": "aller",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "allait"
+  },
+  {
+    "verb": "aller",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "allions"
+  },
+  {
+    "verb": "aller",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "alliez"
+  },
+  {
+    "verb": "aller",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "allaient"
+  },
+  {
+    "verb": "aller",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "irais"
+  },
+  {
+    "verb": "aller",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "irais"
+  },
+  {
+    "verb": "aller",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "irait"
+  },
+  {
+    "verb": "aller",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "irions"
+  },
+  {
+    "verb": "aller",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "iriez"
+  },
+  {
+    "verb": "aller",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "iraient"
+  },
+  {
+    "verb": "aller",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "suis allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "es allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "est allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "sommes allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "êtes allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "sont allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "irai"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "iras"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "ira"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "irons"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "irez"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "iront"
+  },
+  {
+    "verb": "aller",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "va"
+  },
+  {
+    "verb": "aller",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "allons"
+  },
+  {
+    "verb": "aller",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "allez"
+  },
+  {
+    "verb": "finir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "finis"
+  },
+  {
+    "verb": "finir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "finis"
+  },
+  {
+    "verb": "finir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "finit"
+  },
+  {
+    "verb": "finir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "finissons"
+  },
+  {
+    "verb": "finir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "finissez"
+  },
+  {
+    "verb": "finir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "finissent"
+  },
+  {
+    "verb": "finir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "finissais"
+  },
+  {
+    "verb": "finir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "finissais"
+  },
+  {
+    "verb": "finir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "finissait"
+  },
+  {
+    "verb": "finir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "finissions"
+  },
+  {
+    "verb": "finir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "finissiez"
+  },
+  {
+    "verb": "finir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "finissaient"
+  },
+  {
+    "verb": "finir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "finirais"
+  },
+  {
+    "verb": "finir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "finirais"
+  },
+  {
+    "verb": "finir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "finirait"
+  },
+  {
+    "verb": "finir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "finirions"
+  },
+  {
+    "verb": "finir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "finiriez"
+  },
+  {
+    "verb": "finir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "finiraient"
+  },
+  {
+    "verb": "finir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "finirai"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "finiras"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "finira"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "finirons"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "finirez"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "finiront"
+  },
+  {
+    "verb": "finir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "finis"
+  },
+  {
+    "verb": "finir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "finissons"
+  },
+  {
+    "verb": "finir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "finissez"
+  },
+  {
+    "verb": "sortir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "sors"
+  },
+  {
+    "verb": "sortir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "sors"
+  },
+  {
+    "verb": "sortir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sort"
+  },
+  {
+    "verb": "sortir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "sortons"
+  },
+  {
+    "verb": "sortir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "sortez"
+  },
+  {
+    "verb": "sortir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "sortent"
+  },
+  {
+    "verb": "sortir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "sortais"
+  },
+  {
+    "verb": "sortir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "sortais"
+  },
+  {
+    "verb": "sortir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sortait"
+  },
+  {
+    "verb": "sortir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "sortions"
+  },
+  {
+    "verb": "sortir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "sortiez"
+  },
+  {
+    "verb": "sortir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "sortaient"
+  },
+  {
+    "verb": "sortir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "sortirais"
+  },
+  {
+    "verb": "sortir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "sortirais"
+  },
+  {
+    "verb": "sortir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sortirait"
+  },
+  {
+    "verb": "sortir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "sortirions"
+  },
+  {
+    "verb": "sortir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "sortiriez"
+  },
+  {
+    "verb": "sortir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "sortiraient"
+  },
+  {
+    "verb": "sortir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "suis sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "es sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "est sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "sommes sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "êtes sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "sont sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "sortirai"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "sortiras"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sortira"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "sortirons"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "sortirez"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "sortiront"
+  },
+  {
+    "verb": "sortir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "sors"
+  },
+  {
+    "verb": "sortir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "sortons"
+  },
+  {
+    "verb": "sortir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "sortez"
+  },
+  {
+    "verb": "courir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "cours"
+  },
+  {
+    "verb": "courir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "cours"
+  },
+  {
+    "verb": "courir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "court"
+  },
+  {
+    "verb": "courir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "courons"
+  },
+  {
+    "verb": "courir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "courez"
+  },
+  {
+    "verb": "courir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "courent"
+  },
+  {
+    "verb": "courir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "courais"
+  },
+  {
+    "verb": "courir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "courais"
+  },
+  {
+    "verb": "courir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "courait"
+  },
+  {
+    "verb": "courir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "courions"
+  },
+  {
+    "verb": "courir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "couriez"
+  },
+  {
+    "verb": "courir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "couraient"
+  },
+  {
+    "verb": "courir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "courrais"
+  },
+  {
+    "verb": "courir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "courrais"
+  },
+  {
+    "verb": "courir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "courrait"
+  },
+  {
+    "verb": "courir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "courrions"
+  },
+  {
+    "verb": "courir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "courriez"
+  },
+  {
+    "verb": "courir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "courraient"
+  },
+  {
+    "verb": "courir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "courrai"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "courras"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "courra"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "courrons"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "courrez"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "courront"
+  },
+  {
+    "verb": "courir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "cours"
+  },
+  {
+    "verb": "courir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "courons"
+  },
+  {
+    "verb": "courir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "courez"
+  },
+  {
+    "verb": "venir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "viens"
+  },
+  {
+    "verb": "venir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "viens"
+  },
+  {
+    "verb": "venir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "vient"
+  },
+  {
+    "verb": "venir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "venons"
+  },
+  {
+    "verb": "venir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "venez"
+  },
+  {
+    "verb": "venir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "viennent"
+  },
+  {
+    "verb": "venir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "venais"
+  },
+  {
+    "verb": "venir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "venais"
+  },
+  {
+    "verb": "venir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "venait"
+  },
+  {
+    "verb": "venir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "venions"
+  },
+  {
+    "verb": "venir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "veniez"
+  },
+  {
+    "verb": "venir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "venaient"
+  },
+  {
+    "verb": "venir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "viendrais"
+  },
+  {
+    "verb": "venir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "viendrais"
+  },
+  {
+    "verb": "venir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "viendrait"
+  },
+  {
+    "verb": "venir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "viendrions"
+  },
+  {
+    "verb": "venir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "viendriez"
+  },
+  {
+    "verb": "venir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "viendraient"
+  },
+  {
+    "verb": "venir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "suis venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "es venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "est venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "sommes venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "êtes venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "sont venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "viendrai"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "viendras"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "viendra"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "viendrons"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "viendrez"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "viendront"
+  },
+  {
+    "verb": "venir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "viens"
+  },
+  {
+    "verb": "venir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "venons"
+  },
+  {
+    "verb": "venir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "venez"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "peux"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "peux"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "peut"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "pouvons"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "pouvez"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "peuvent"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "pouvais"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "pouvais"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pouvait"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "pouvions"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "pouviez"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "pouvaient"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "pourrais"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "pourrais"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pourrait"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "pourrions"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "pourriez"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "pourraient"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "pourrai"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "pourras"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pourra"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "pourrons"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "pourrez"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "pourront"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "peux"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "pouvons"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "pouvez"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "veux"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "veux"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "veut"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "voulons"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "voulez"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "veulent"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "voulais"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "voulais"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "voulait"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "voulions"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "vouliez"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "voulaient"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "voudrais"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "voudrais"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "voudrait"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "voudrions"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "voudriez"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "voudraient"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "voudrai"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "voudras"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "voudra"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "voudrons"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "voudrez"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "voudront"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "veuille"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "veuillons"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "veuillez"
+  },
+  {
+    "verb": "devoir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "dois"
+  },
+  {
+    "verb": "devoir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "dois"
+  },
+  {
+    "verb": "devoir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "doit"
+  },
+  {
+    "verb": "devoir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "devons"
+  },
+  {
+    "verb": "devoir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "devez"
+  },
+  {
+    "verb": "devoir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "doivent"
+  },
+  {
+    "verb": "devoir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "devais"
+  },
+  {
+    "verb": "devoir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "devais"
+  },
+  {
+    "verb": "devoir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "devait"
+  },
+  {
+    "verb": "devoir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "devions"
+  },
+  {
+    "verb": "devoir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "deviez"
+  },
+  {
+    "verb": "devoir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "devaient"
+  },
+  {
+    "verb": "devoir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "devrais"
+  },
+  {
+    "verb": "devoir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "devrais"
+  },
+  {
+    "verb": "devoir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "devrait"
+  },
+  {
+    "verb": "devoir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "devrions"
+  },
+  {
+    "verb": "devoir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "devriez"
+  },
+  {
+    "verb": "devoir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "devraient"
+  },
+  {
+    "verb": "devoir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "devrai"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "devras"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "devra"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "devrons"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "devrez"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "devront"
+  },
+  {
+    "verb": "devoir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "dois"
+  },
+  {
+    "verb": "devoir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "devons"
+  },
+  {
+    "verb": "devoir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "devez"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "reçois"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "reçois"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "reçoit"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "recevons"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "recevez"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "reçoivent"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "recevais"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "recevais"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "recevait"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "recevions"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "receviez"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "recevaient"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "recevrais"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "recevrais"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "recevrait"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "recevrions"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "recevriez"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "recevraient"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "recevrai"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "recevras"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "recevra"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "recevrons"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "recevrez"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "recevront"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "reçois"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "recevons"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "recevez"
+  },
+  {
+    "verb": "savoir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "sais"
+  },
+  {
+    "verb": "savoir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "sais"
+  },
+  {
+    "verb": "savoir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sait"
+  },
+  {
+    "verb": "savoir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "savons"
+  },
+  {
+    "verb": "savoir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "savez"
+  },
+  {
+    "verb": "savoir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "savent"
+  },
+  {
+    "verb": "savoir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "savais"
+  },
+  {
+    "verb": "savoir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "savais"
+  },
+  {
+    "verb": "savoir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "savait"
+  },
+  {
+    "verb": "savoir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "savions"
+  },
+  {
+    "verb": "savoir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "saviez"
+  },
+  {
+    "verb": "savoir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "savaient"
+  },
+  {
+    "verb": "savoir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "saurais"
+  },
+  {
+    "verb": "savoir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "saurais"
+  },
+  {
+    "verb": "savoir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "saurait"
+  },
+  {
+    "verb": "savoir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "saurions"
+  },
+  {
+    "verb": "savoir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "sauriez"
+  },
+  {
+    "verb": "savoir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "sauraient"
+  },
+  {
+    "verb": "savoir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "saurai"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "sauras"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "saura"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "saurons"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "saurez"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "sauront"
+  },
+  {
+    "verb": "savoir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "sache"
+  },
+  {
+    "verb": "savoir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "sachons"
+  },
+  {
+    "verb": "savoir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "sachez"
+  },
+  {
+    "verb": "pleuvoir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pleut"
+  },
+  {
+    "verb": "pleuvoir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pleuvait"
+  },
+  {
+    "verb": "pleuvoir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pleuvrait"
+  },
+  {
+    "verb": "pleuvoir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a plu"
+  },
+  {
+    "verb": "pleuvoir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "pleuvra"
+  },
+  {
+    "verb": "voir",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "vois"
+  },
+  {
+    "verb": "voir",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "vois"
+  },
+  {
+    "verb": "voir",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "voit"
+  },
+  {
+    "verb": "voir",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "voyons"
+  },
+  {
+    "verb": "voir",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "voyez"
+  },
+  {
+    "verb": "voir",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "voient"
+  },
+  {
+    "verb": "voir",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "voyais"
+  },
+  {
+    "verb": "voir",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "voyais"
+  },
+  {
+    "verb": "voir",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "voyait"
+  },
+  {
+    "verb": "voir",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "voyions"
+  },
+  {
+    "verb": "voir",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "voyiez"
+  },
+  {
+    "verb": "voir",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "voyaient"
+  },
+  {
+    "verb": "voir",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "verrais"
+  },
+  {
+    "verb": "voir",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "verrais"
+  },
+  {
+    "verb": "voir",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "verrait"
+  },
+  {
+    "verb": "voir",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "verrions"
+  },
+  {
+    "verb": "voir",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "verriez"
+  },
+  {
+    "verb": "voir",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "verraient"
+  },
+  {
+    "verb": "voir",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "verrai"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "verras"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "verra"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "verrons"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "verrez"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "verront"
+  },
+  {
+    "verb": "voir",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "vois"
+  },
+  {
+    "verb": "voir",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "voyons"
+  },
+  {
+    "verb": "voir",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "voyez"
+  },
+  {
+    "verb": "croire",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "crois"
+  },
+  {
+    "verb": "croire",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "crois"
+  },
+  {
+    "verb": "croire",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "croit"
+  },
+  {
+    "verb": "croire",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "croyons"
+  },
+  {
+    "verb": "croire",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "croyez"
+  },
+  {
+    "verb": "croire",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "croient"
+  },
+  {
+    "verb": "croire",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "croyais"
+  },
+  {
+    "verb": "croire",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "croyais"
+  },
+  {
+    "verb": "croire",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "croyait"
+  },
+  {
+    "verb": "croire",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "croyions"
+  },
+  {
+    "verb": "croire",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "croyiez"
+  },
+  {
+    "verb": "croire",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "croyaient"
+  },
+  {
+    "verb": "croire",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "croirais"
+  },
+  {
+    "verb": "croire",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "croirais"
+  },
+  {
+    "verb": "croire",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "croirait"
+  },
+  {
+    "verb": "croire",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "croirions"
+  },
+  {
+    "verb": "croire",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "croiriez"
+  },
+  {
+    "verb": "croire",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "croiraient"
+  },
+  {
+    "verb": "croire",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "croirai"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "croiras"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "croira"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "croirons"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "croirez"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "croiront"
+  },
+  {
+    "verb": "croire",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "crois"
+  },
+  {
+    "verb": "croire",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "croyons"
+  },
+  {
+    "verb": "croire",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "croyez"
+  },
+  {
+    "verb": "écrire",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "écris"
+  },
+  {
+    "verb": "écrire",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "écris"
+  },
+  {
+    "verb": "écrire",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "écrivons"
+  },
+  {
+    "verb": "écrire",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "écrivez"
+  },
+  {
+    "verb": "écrire",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "écrivent"
+  },
+  {
+    "verb": "écrire",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "écrivais"
+  },
+  {
+    "verb": "écrire",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "écrivais"
+  },
+  {
+    "verb": "écrire",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "écrivait"
+  },
+  {
+    "verb": "écrire",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "écrivions"
+  },
+  {
+    "verb": "écrire",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "écriviez"
+  },
+  {
+    "verb": "écrire",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "écrivaient"
+  },
+  {
+    "verb": "écrire",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "écrirais"
+  },
+  {
+    "verb": "écrire",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "écrirais"
+  },
+  {
+    "verb": "écrire",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "écrirait"
+  },
+  {
+    "verb": "écrire",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "écririons"
+  },
+  {
+    "verb": "écrire",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "écririez"
+  },
+  {
+    "verb": "écrire",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "écriraient"
+  },
+  {
+    "verb": "écrire",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "écrirai"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "écriras"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "écrira"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "écrirons"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "écrirez"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "écriront"
+  },
+  {
+    "verb": "écrire",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "écris"
+  },
+  {
+    "verb": "écrire",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "écrivons"
+  },
+  {
+    "verb": "écrire",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "écrivez"
+  },
+  {
+    "verb": "lire",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "lis"
+  },
+  {
+    "verb": "lire",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "lis"
+  },
+  {
+    "verb": "lire",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "lit"
+  },
+  {
+    "verb": "lire",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "lisons"
+  },
+  {
+    "verb": "lire",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "lisez"
+  },
+  {
+    "verb": "lire",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "lisent"
+  },
+  {
+    "verb": "lire",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "lisais"
+  },
+  {
+    "verb": "lire",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "lisais"
+  },
+  {
+    "verb": "lire",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "lisait"
+  },
+  {
+    "verb": "lire",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "lisions"
+  },
+  {
+    "verb": "lire",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "lisiez"
+  },
+  {
+    "verb": "lire",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "lisaient"
+  },
+  {
+    "verb": "lire",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "lirais"
+  },
+  {
+    "verb": "lire",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "lirais"
+  },
+  {
+    "verb": "lire",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "lirait"
+  },
+  {
+    "verb": "lire",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "lirions"
+  },
+  {
+    "verb": "lire",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "liriez"
+  },
+  {
+    "verb": "lire",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "liraient"
+  },
+  {
+    "verb": "lire",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "lirai"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "liras"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "lira"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "lirons"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "lirez"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "liront"
+  },
+  {
+    "verb": "lire",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "lis"
+  },
+  {
+    "verb": "lire",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "lisons"
+  },
+  {
+    "verb": "lire",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "lisez"
+  },
+  {
+    "verb": "dire",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "dis"
+  },
+  {
+    "verb": "dire",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "dis"
+  },
+  {
+    "verb": "dire",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "disons"
+  },
+  {
+    "verb": "dire",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "dites"
+  },
+  {
+    "verb": "dire",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "disent"
+  },
+  {
+    "verb": "dire",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "disais"
+  },
+  {
+    "verb": "dire",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "disais"
+  },
+  {
+    "verb": "dire",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "disait"
+  },
+  {
+    "verb": "dire",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "disions"
+  },
+  {
+    "verb": "dire",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "disiez"
+  },
+  {
+    "verb": "dire",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "disaient"
+  },
+  {
+    "verb": "dire",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "dirais"
+  },
+  {
+    "verb": "dire",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "dirais"
+  },
+  {
+    "verb": "dire",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "dirait"
+  },
+  {
+    "verb": "dire",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "dirions"
+  },
+  {
+    "verb": "dire",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "diriez"
+  },
+  {
+    "verb": "dire",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "diraient"
+  },
+  {
+    "verb": "dire",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "dirai"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "diras"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "dira"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "dirons"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "direz"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "diront"
+  },
+  {
+    "verb": "dire",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "dis"
+  },
+  {
+    "verb": "dire",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "disons"
+  },
+  {
+    "verb": "dire",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "dites"
+  },
+  {
+    "verb": "faire",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "fais"
+  },
+  {
+    "verb": "faire",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "fais"
+  },
+  {
+    "verb": "faire",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "faisons"
+  },
+  {
+    "verb": "faire",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "faites"
+  },
+  {
+    "verb": "faire",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "font"
+  },
+  {
+    "verb": "faire",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "faisais"
+  },
+  {
+    "verb": "faire",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "faisais"
+  },
+  {
+    "verb": "faire",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "faisait"
+  },
+  {
+    "verb": "faire",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "faisions"
+  },
+  {
+    "verb": "faire",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "faisiez"
+  },
+  {
+    "verb": "faire",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "faisaient"
+  },
+  {
+    "verb": "faire",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "ferais"
+  },
+  {
+    "verb": "faire",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "ferais"
+  },
+  {
+    "verb": "faire",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "ferait"
+  },
+  {
+    "verb": "faire",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "ferions"
+  },
+  {
+    "verb": "faire",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "feriez"
+  },
+  {
+    "verb": "faire",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "feraient"
+  },
+  {
+    "verb": "faire",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "ferai"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "feras"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "fera"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "ferons"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "ferez"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "feront"
+  },
+  {
+    "verb": "faire",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "fais"
+  },
+  {
+    "verb": "faire",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "faisons"
+  },
+  {
+    "verb": "faire",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "faites"
+  },
+  {
+    "verb": "mettre",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "mets"
+  },
+  {
+    "verb": "mettre",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "mets"
+  },
+  {
+    "verb": "mettre",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "met"
+  },
+  {
+    "verb": "mettre",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "mettons"
+  },
+  {
+    "verb": "mettre",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "mettez"
+  },
+  {
+    "verb": "mettre",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "mettent"
+  },
+  {
+    "verb": "mettre",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "mettais"
+  },
+  {
+    "verb": "mettre",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "mettais"
+  },
+  {
+    "verb": "mettre",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "mettait"
+  },
+  {
+    "verb": "mettre",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "mettions"
+  },
+  {
+    "verb": "mettre",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "mettiez"
+  },
+  {
+    "verb": "mettre",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "mettaient"
+  },
+  {
+    "verb": "mettre",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "mettrais"
+  },
+  {
+    "verb": "mettre",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "mettrais"
+  },
+  {
+    "verb": "mettre",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "mettrait"
+  },
+  {
+    "verb": "mettre",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "mettrions"
+  },
+  {
+    "verb": "mettre",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "mettriez"
+  },
+  {
+    "verb": "mettre",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "mettraient"
+  },
+  {
+    "verb": "mettre",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "mettrai"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "mettras"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "mettra"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "mettrons"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "mettrez"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "mettront"
+  },
+  {
+    "verb": "mettre",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "mets"
+  },
+  {
+    "verb": "mettre",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "mettons"
+  },
+  {
+    "verb": "mettre",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "mettez"
+  },
+  {
+    "verb": "connaître",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "connais"
+  },
+  {
+    "verb": "connaître",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "connais"
+  },
+  {
+    "verb": "connaître",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "connaît"
+  },
+  {
+    "verb": "connaître",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "connaissons"
+  },
+  {
+    "verb": "connaître",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "connaissez"
+  },
+  {
+    "verb": "connaître",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "connaissent"
+  },
+  {
+    "verb": "connaître",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "connaissais"
+  },
+  {
+    "verb": "connaître",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "connaissais"
+  },
+  {
+    "verb": "connaître",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "connaissait"
+  },
+  {
+    "verb": "connaître",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "connaissions"
+  },
+  {
+    "verb": "connaître",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "connaissiez"
+  },
+  {
+    "verb": "connaître",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "connaissaient"
+  },
+  {
+    "verb": "connaître",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "connaîtrais"
+  },
+  {
+    "verb": "connaître",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "connaîtrais"
+  },
+  {
+    "verb": "connaître",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "connaîtrait"
+  },
+  {
+    "verb": "connaître",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "connaîtrions"
+  },
+  {
+    "verb": "connaître",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "connaîtriez"
+  },
+  {
+    "verb": "connaître",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "connaîtraient"
+  },
+  {
+    "verb": "connaître",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "connaîtrai"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "connaîtras"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "connaîtra"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "connaîtrons"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "connaîtrez"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "connaîtront"
+  },
+  {
+    "verb": "connaître",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "connais"
+  },
+  {
+    "verb": "connaître",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "connaissons"
+  },
+  {
+    "verb": "connaître",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "connaissez"
+  },
+  {
+    "verb": "entendre",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "entends"
+  },
+  {
+    "verb": "entendre",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "entends"
+  },
+  {
+    "verb": "entendre",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "entend"
+  },
+  {
+    "verb": "entendre",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "entendons"
+  },
+  {
+    "verb": "entendre",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "entendez"
+  },
+  {
+    "verb": "entendre",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "entendent"
+  },
+  {
+    "verb": "entendre",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "entendais"
+  },
+  {
+    "verb": "entendre",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "entendais"
+  },
+  {
+    "verb": "entendre",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "entendait"
+  },
+  {
+    "verb": "entendre",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "entendions"
+  },
+  {
+    "verb": "entendre",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "entendiez"
+  },
+  {
+    "verb": "entendre",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "entendaient"
+  },
+  {
+    "verb": "entendre",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "entendrais"
+  },
+  {
+    "verb": "entendre",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "entendrais"
+  },
+  {
+    "verb": "entendre",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "entendrait"
+  },
+  {
+    "verb": "entendre",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "entendrions"
+  },
+  {
+    "verb": "entendre",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "entendriez"
+  },
+  {
+    "verb": "entendre",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "entendraient"
+  },
+  {
+    "verb": "entendre",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "entendrai"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "entendras"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "entendra"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "entendrons"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "entendrez"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "entendront"
+  },
+  {
+    "verb": "entendre",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "entends"
+  },
+  {
+    "verb": "entendre",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "entendons"
+  },
+  {
+    "verb": "entendre",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "entendez"
+  },
+  {
+    "verb": "prendre",
+    "tense": "présent",
+    "pronoun": "je",
+    "correct_answer": "prends"
+  },
+  {
+    "verb": "prendre",
+    "tense": "présent",
+    "pronoun": "tu",
+    "correct_answer": "prends"
+  },
+  {
+    "verb": "prendre",
+    "tense": "présent",
+    "pronoun": "il/elle/on",
+    "correct_answer": "prend"
+  },
+  {
+    "verb": "prendre",
+    "tense": "présent",
+    "pronoun": "nous",
+    "correct_answer": "prenons"
+  },
+  {
+    "verb": "prendre",
+    "tense": "présent",
+    "pronoun": "vous",
+    "correct_answer": "prenez"
+  },
+  {
+    "verb": "prendre",
+    "tense": "présent",
+    "pronoun": "ils/elles",
+    "correct_answer": "prennent"
+  },
+  {
+    "verb": "prendre",
+    "tense": "imparfait",
+    "pronoun": "je",
+    "correct_answer": "prenais"
+  },
+  {
+    "verb": "prendre",
+    "tense": "imparfait",
+    "pronoun": "tu",
+    "correct_answer": "prenais"
+  },
+  {
+    "verb": "prendre",
+    "tense": "imparfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "prenait"
+  },
+  {
+    "verb": "prendre",
+    "tense": "imparfait",
+    "pronoun": "nous",
+    "correct_answer": "prenions"
+  },
+  {
+    "verb": "prendre",
+    "tense": "imparfait",
+    "pronoun": "vous",
+    "correct_answer": "preniez"
+  },
+  {
+    "verb": "prendre",
+    "tense": "imparfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "prenaient"
+  },
+  {
+    "verb": "prendre",
+    "tense": "conditionnel",
+    "pronoun": "je",
+    "correct_answer": "prendrais"
+  },
+  {
+    "verb": "prendre",
+    "tense": "conditionnel",
+    "pronoun": "tu",
+    "correct_answer": "prendrais"
+  },
+  {
+    "verb": "prendre",
+    "tense": "conditionnel",
+    "pronoun": "il/elle/on",
+    "correct_answer": "prendrait"
+  },
+  {
+    "verb": "prendre",
+    "tense": "conditionnel",
+    "pronoun": "nous",
+    "correct_answer": "prendrions"
+  },
+  {
+    "verb": "prendre",
+    "tense": "conditionnel",
+    "pronoun": "vous",
+    "correct_answer": "prendriez"
+  },
+  {
+    "verb": "prendre",
+    "tense": "conditionnel",
+    "pronoun": "ils/elles",
+    "correct_answer": "prendraient"
+  },
+  {
+    "verb": "prendre",
+    "tense": "passé composé",
+    "pronoun": "je",
+    "correct_answer": "ai pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "passé composé",
+    "pronoun": "tu",
+    "correct_answer": "as pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "passé composé",
+    "pronoun": "il/elle/on",
+    "correct_answer": "a pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "passé composé",
+    "pronoun": "nous",
+    "correct_answer": "avons pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "passé composé",
+    "pronoun": "vous",
+    "correct_answer": "avez pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "passé composé",
+    "pronoun": "ils/elles",
+    "correct_answer": "ont pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur",
+    "pronoun": "je",
+    "correct_answer": "prendrai"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur",
+    "pronoun": "tu",
+    "correct_answer": "prendras"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "prendra"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur",
+    "pronoun": "nous",
+    "correct_answer": "prendrons"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur",
+    "pronoun": "vous",
+    "correct_answer": "prendrez"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur",
+    "pronoun": "ils/elles",
+    "correct_answer": "prendront"
+  },
+  {
+    "verb": "prendre",
+    "tense": "impératif",
+    "pronoun": "tu",
+    "correct_answer": "prends"
+  },
+  {
+    "verb": "prendre",
+    "tense": "impératif",
+    "pronoun": "nous",
+    "correct_answer": "prenons"
+  },
+  {
+    "verb": "prendre",
+    "tense": "impératif",
+    "pronoun": "vous",
+    "correct_answer": "prenez"
+  }
+]

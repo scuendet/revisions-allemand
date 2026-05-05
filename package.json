@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
-    "seed": "npx tsx seed.ts"
+    "seed": "npx tsx seed.ts",
+    "merge:blob": "npx tsx scripts/merge-local-data-to-vercel-blob.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

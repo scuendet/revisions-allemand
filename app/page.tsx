@@ -80,8 +80,8 @@ export default function HomePage() {
       <div className="w-full max-w-2xl">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-extrabold text-primary mb-2">Deutsch Üben</h1>
-          <p className="text-lg text-gray-500 font-medium">Révise ton vocabulaire allemand</p>
+          <h1 className="text-5xl font-extrabold text-primary mb-2">Revisions</h1>
+          <p className="text-lg text-gray-500 font-medium">Allemand · Maths · Français</p>
         </div>
 
         {loadError && (

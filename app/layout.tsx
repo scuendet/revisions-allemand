@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Deutsch Üben',
-  description: 'Révise ton vocabulaire allemand',
+  title: 'Révisions',
+  description: 'Révise l\'allemand, le français et les maths',
 }
 
 export default function RootLayout({

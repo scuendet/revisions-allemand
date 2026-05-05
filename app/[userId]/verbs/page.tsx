@@ -20,10 +20,14 @@ const PRONOUNS = ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie']
 const FIELDS = ['ich', 'du', 'er', 'wir', 'ihr', 'sie'] as const
 type FieldKey = typeof FIELDS[number]
 
-const SPECIAL_CHARS = ['ä', 'Ä', 'ö', 'Ö', 'ü', 'Ü', 'ß']
+const SPECIAL_CHARS = ['à', 'â', 'ç', 'é', 'è', 'ê', 'ë', 'î', 'ï', 'ô', 'ù', 'û']
 
 function normalize(s: string): string {
-  return s.toLowerCase().trim().replace(/\s+/g, ' ')
+  return s
+    .toLowerCase()
+    .trim()
+    .replace(/[.,!;:'"()\-]/g, '')
+    .replace(/\s+/g, '')
 }
 
 export default function VerbsPage() {
@@ -31,18 +35,16 @@ export default function VerbsPage() {
   const router = useRouter()
   const userId = params.userId as string
 
-  // Session config
   const [phase, setPhase] = useState<'config' | 'quiz' | 'done'>('config')
   const [count, setCount] = useState<5 | 10 | 'all'>(10)
 
-  // Quiz state
   const [verbs, setVerbs] = useState<Verb[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<FieldKey, string>>({ ich: '', du: '', er: '', wir: '', ihr: '', sie: '' })
   const [submitted, setSubmitted] = useState(false)
   const [sessionResults, setSessionResults] = useState<{ verb: Verb; correctCount: number }[]>([])
   const [loading, setLoading] = useState(false)
-  const [focusedField, setFocusedField] = useState<number>(0)
+  const [focusedField, setFocusedField] = useState(0)
 
   const inputRefs = useRef<(HTMLInputElement | null)[]>([])
 
@@ -140,13 +142,12 @@ export default function VerbsPage() {
   const totalForms = sessionResults.length * 6
   const perfectVerbs = sessionResults.filter(r => r.correctCount === 6).length
 
-  // ── Config screen ──────────────────────────────────────────────────────────
   if (phase === 'config') {
     return (
       <div className="min-h-screen bg-background flex flex-col items-center justify-center p-6">
         <div className="w-full max-w-md">
           <div className="flex items-center gap-3 mb-8">
-            <button onClick={() => router.push(`/${userId}`)} className="text-gray-400 hover:text-primary transition-colors font-semibold">← Retour</button>
+            <button onClick={() => router.push(`/${userId}/german`)} className="text-gray-400 hover:text-primary transition-colors font-semibold">← Retour</button>
             <h1 className="text-2xl font-extrabold text-primary">Conjugaison</h1>
           </div>
 
@@ -179,7 +180,6 @@ export default function VerbsPage() {
     )
   }
 
-  // ── Done screen ────────────────────────────────────────────────────────────
   if (phase === 'done') {
     const missed = sessionResults.filter(r => r.correctCount < 6)
     return (
@@ -216,7 +216,7 @@ export default function VerbsPage() {
             <button onClick={() => { setPhase('config') }} className="flex-1 border-2 border-primary text-primary py-3 rounded-xl font-bold hover:bg-primary/5 transition-colors">
               Recommencer
             </button>
-            <button onClick={() => router.push(`/${userId}`)} className="flex-1 bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-light transition-colors">
+            <button onClick={() => router.push(`/${userId}/german`)} className="flex-1 bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-light transition-colors">
               Menu
             </button>
           </div>
@@ -225,7 +225,6 @@ export default function VerbsPage() {
     )
   }
 
-  // ── Quiz screen ────────────────────────────────────────────────────────────
   if (!current) return null
 
   const allCorrect = submitted && FIELDS.every(f => getFieldStatus(f) === 'correct')
@@ -233,13 +232,11 @@ export default function VerbsPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col p-6">
       <div className="w-full max-w-lg mx-auto flex-1 flex flex-col">
-        {/* Nav */}
         <div className="flex items-center justify-between mb-4">
-          <button onClick={() => router.push(`/${userId}`)} className="text-sm font-semibold text-gray-400 hover:text-primary transition-colors">← Menu</button>
+          <button onClick={() => router.push(`/${userId}/german`)} className="text-sm font-semibold text-gray-400 hover:text-primary transition-colors">← Menu</button>
           <span className="text-xs font-semibold text-gray-300 uppercase tracking-wide">Conjugaison</span>
         </div>
 
-        {/* Progress */}
         <div className="mb-5">
           <div className="flex justify-between text-sm font-semibold text-gray-500 mb-1.5">
             <span>Verbe {currentIndex + 1} / {verbs.length}</span>
@@ -253,7 +250,6 @@ export default function VerbsPage() {
           </div>
         </div>
 
-        {/* Verb card */}
         <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 mb-4">
           <div className="text-center mb-5">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Infinitif</p>
@@ -261,7 +257,6 @@ export default function VerbsPage() {
             <p className="text-gray-400 font-medium mt-1">{current.french}</p>
           </div>
 
-          {/* Conjugation grid */}
           <div className="space-y-2.5">
             {FIELDS.map((field, i) => {
               const status = getFieldStatus(field)
@@ -276,7 +271,7 @@ export default function VerbsPage() {
                       onChange={e => setAnswers(prev => ({ ...prev, [field]: e.target.value }))}
                       onKeyDown={e => handleInputKey(e, i)}
                       onFocus={() => setFocusedField(i)}
-                      disabled={submitted}
+                      readOnly={submitted}
                       placeholder={`forme pour ${PRONOUNS[i].split(' ')[0]}…`}
                       className={`w-full border-2 rounded-xl px-3 py-2 text-primary font-semibold outline-none transition-colors text-sm ${
                         status === 'correct'
@@ -295,7 +290,6 @@ export default function VerbsPage() {
             })}
           </div>
 
-          {/* Special chars */}
           <div className="flex gap-1.5 mt-4 flex-wrap">
             {SPECIAL_CHARS.map(c => (
               <button
@@ -309,14 +303,12 @@ export default function VerbsPage() {
           </div>
         </div>
 
-        {/* Result banner */}
         {submitted && (
           <div className={`rounded-xl p-3 text-center font-bold mb-4 ${allCorrect ? 'bg-emerald-50 text-emerald-700' : 'bg-amber-50 text-amber-700'}`}>
             {allCorrect ? '🎉 Parfait ! Toutes les formes sont correctes.' : `${sessionResults[sessionResults.length - 1]?.correctCount ?? 0} / 6 formes correctes`}
           </div>
         )}
 
-        {/* Action button */}
         {!submitted ? (
           <button
             onClick={handleSubmit}

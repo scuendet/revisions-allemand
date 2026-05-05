@@ -24,8 +24,8 @@ function normalizeAnswer(s: string): string {
   return s
     .toLowerCase()
     .trim()
-    .replace(/[.,!?;:'"()\-]/g, '')
-    .replace(/\s+/g, ' ')
+    .replace(/[.,!;:'"()\-]/g, '')
+    .replace(/\s+/g, '')
 }
 
 export default function QuizPage() {
@@ -36,12 +36,15 @@ export default function QuizPage() {
 
   const unitsParam = searchParams.get('units') || ''
   const mode = (searchParams.get('mode') || 'flashcard') as 'flashcard' | 'audio' | 'typing'
-  const countParam = parseInt(searchParams.get('count') || '10')
+  const countParamRaw = searchParams.get('count') || '10'
+  const countParam = countParamRaw === 'all' ? 'all' : parseInt(countParamRaw, 10)
+  const smartMode = searchParams.get('smart') !== '0'
 
   const [items, setItems] = useState<VocabItem[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [results, setResults] = useState<Result[]>([])
   const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState('')
   const [done, setDone] = useState(false)
   const [elapsed, setElapsed] = useState(0)
   const startTimeRef = useRef<number | null>(null)
@@ -65,6 +68,14 @@ export default function QuizPage() {
   const recognitionRef = useRef<any>(null)
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const chunksRef = useRef<Blob[]>([])
+  /** Invalide les callbacks retardés après la synthèse (changement de question ou démontage). */
+  const audioGenRef = useRef(0)
+  /** Chrome ignore souvent speak() placé tout de suite après cancel() — on reporte l’enqueue. */
+  const deferredSpeakTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const postPromptListenTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  /** Mot actuel pour les handlers async reconnaissance vocal (toujours aligné avec l’audio). */
+  const audioQuestionRef = useRef<VocabItem | null>(null)
+  const recognitionListeningRef = useRef(false)
 
   function debugLog(msg: string) {
     const ts = new Date().toISOString().slice(11, 23)
@@ -74,31 +85,45 @@ export default function QuizPage() {
 
   useEffect(() => {
     const units = unitsParam.split(',').map(Number).filter(Boolean)
+    setLoadError('')
     fetch('/api/quiz/start', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ units, count: countParam }),
+      body: JSON.stringify({
+        units,
+        count: countParam,
+        user_id: parseInt(userId),
+        mode,
+        smart: smartMode,
+      }),
     })
-      .then(r => r.json())
-      .then(data => { setItems(data); setLoading(false); startTimeRef.current = Date.now() })
-  }, [])
+      .then(async r => {
+        if (!r.ok) throw new Error('Impossible de charger la session de vocabulaire.')
+        return r.json()
+      })
+      .then(data => { setItems(data); startTimeRef.current = Date.now() })
+      .catch(err => {
+        const message = err instanceof Error ? err.message : 'Impossible de charger la session de vocabulaire.'
+        setItems([])
+        setLoadError(message)
+      })
+      .finally(() => setLoading(false))
+  }, [unitsParam, countParam, userId, mode, smartMode])
+
+  const doneRef = useRef(done)
+  doneRef.current = done
+
+  const current = items[currentIndex]
+
+  useEffect(() => {
+    audioQuestionRef.current = current ?? null
+  }, [current])
 
   useEffect(() => {
     if (mode === 'typing' && inputRef.current) {
       inputRef.current.focus()
     }
   }, [currentIndex, mode])
-
-  // Speak the French prompt aloud in audio mode whenever the question changes
-  useEffect(() => {
-    if (mode !== 'audio' || !current || done) return
-    const utter = new SpeechSynthesisUtterance(current.french)
-    utter.lang = 'fr-FR'
-    utter.rate = 0.9
-    window.speechSynthesis.cancel()
-    window.speechSynthesis.speak(utter)
-    return () => { window.speechSynthesis.cancel() }
-  }, [currentIndex, mode, done])
 
   // Keyboard shortcuts for flashcard mode
   useEffect(() => {
@@ -129,7 +154,10 @@ export default function QuizPage() {
         e.preventDefault()
         if (!audioResult && !audioLoading) {
           if (recording) stopRecording()
-          else startRecording()
+          else {
+            cancelSynthAndScheduledListen()
+            startRecording()
+          }
         }
       } else if (e.key === 'Enter' && audioResult) {
         e.preventDefault()
@@ -156,8 +184,6 @@ export default function QuizPage() {
     const s = seconds % 60
     return `${m}:${s.toString().padStart(2, '0')}`
   }
-
-  const current = items[currentIndex]
 
   async function saveResult(vocabId: number, correct: boolean) {
     await fetch('/api/quiz/result', {
@@ -196,6 +222,7 @@ export default function QuizPage() {
       setMicError('')
       setPlaybackUrl(null)
       setAudioDebugLog([])
+      recognitionListeningRef.current = false
     }
   }
 
@@ -225,10 +252,89 @@ export default function QuizPage() {
     }, 0)
   }
 
+  function clearFrenchPromptSchedule() {
+    if (deferredSpeakTimeoutRef.current !== null) {
+      clearTimeout(deferredSpeakTimeoutRef.current)
+      deferredSpeakTimeoutRef.current = null
+    }
+    if (postPromptListenTimeoutRef.current !== null) {
+      clearTimeout(postPromptListenTimeoutRef.current)
+      postPromptListenTimeoutRef.current = null
+    }
+    window.speechSynthesis.cancel()
+    try {
+      recognitionRef.current?.stop()
+    } catch {
+      recognitionRef.current?.abort?.()
+    }
+    recognitionListeningRef.current = false
+  }
+
+  function cancelSynthAndScheduledListen() {
+    audioGenRef.current += 1
+    if (deferredSpeakTimeoutRef.current !== null) {
+      clearTimeout(deferredSpeakTimeoutRef.current)
+      deferredSpeakTimeoutRef.current = null
+    }
+    if (postPromptListenTimeoutRef.current !== null) {
+      clearTimeout(postPromptListenTimeoutRef.current)
+      postPromptListenTimeoutRef.current = null
+    }
+    window.speechSynthesis.cancel()
+  }
+
+  function speakFrenchThenListen(frenchText: string) {
+    audioGenRef.current += 1
+    const myGen = audioGenRef.current
+    clearFrenchPromptSchedule()
+
+    try {
+      window.speechSynthesis.resume()
+    } catch {
+      /* ignore */
+    }
+
+    deferredSpeakTimeoutRef.current = setTimeout(() => {
+      deferredSpeakTimeoutRef.current = null
+      if (audioGenRef.current !== myGen || doneRef.current) return
+
+      window.speechSynthesis.getVoices()
+
+      const utter = new SpeechSynthesisUtterance(frenchText)
+      utter.lang = 'fr-FR'
+      utter.rate = 0.9
+      utter.onend = () => {
+        if (audioGenRef.current !== myGen || doneRef.current) return
+        postPromptListenTimeoutRef.current = setTimeout(() => {
+          postPromptListenTimeoutRef.current = null
+          if (audioGenRef.current !== myGen || doneRef.current) return
+          startRecording()
+        }, 160)
+      }
+      utter.onerror = () => {
+        if (audioGenRef.current !== myGen || doneRef.current) return
+        postPromptListenTimeoutRef.current = setTimeout(() => {
+          postPromptListenTimeoutRef.current = null
+          if (audioGenRef.current !== myGen || doneRef.current) return
+          startRecording()
+        }, 160)
+      }
+      window.speechSynthesis.speak(utter)
+    }, 40)
+  }
+
   function startRecording() {
     setMicError('')
     setPlaybackUrl(null)
     setAudioDebugLog([])
+
+    const vocab = audioQuestionRef.current
+    if (!vocab) return
+
+    if (recognitionListeningRef.current) {
+      debugLog('startRecording skipped (already listening)')
+      return
+    }
 
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
     if (!SpeechRecognition) {
@@ -247,6 +353,7 @@ export default function QuizPage() {
     // Only after it fires onstart do we grab a second stream for MediaRecorder.
     recognition.onstart = async () => {
       debugLog('onstart fired — recognition is listening')
+      recognitionListeningRef.current = true
       setRecording(true)
       // Grab mic stream for playback recording (after recognition owns the mic)
       try {
@@ -271,6 +378,7 @@ export default function QuizPage() {
 
     recognition.onend = () => {
       debugLog('onend fired')
+      recognitionListeningRef.current = false
       setRecording(false)
       const mr = mediaRecorderRef.current
       if (mr && mr.state !== 'inactive') mr.stop()
@@ -278,6 +386,7 @@ export default function QuizPage() {
 
     recognition.onerror = (e: any) => {
       debugLog(`onerror fired: ${e.error}`)
+      recognitionListeningRef.current = false
       if (e.error === 'not-allowed') {
         setMicError('Permission microphone refusée. Active le microphone dans les paramètres de ton navigateur.')
       } else if (e.error === 'no-speech') {
@@ -293,10 +402,12 @@ export default function QuizPage() {
       debugLog(`onresult: "${transcribed}" (confiance ${confidence}%)`)
       setAudioLoading(true)
       try {
+        const item = audioQuestionRef.current
+        if (!item) return
         const res = await fetch('/api/audio/interpret', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ transcribed, expected_german: current.german }),
+          body: JSON.stringify({ transcribed, expected_german: item.german }),
         })
         const data = await res.json()
         if (data.error) {
@@ -306,8 +417,11 @@ export default function QuizPage() {
         }
         debugLog(`interpret result: correct=${data.correct}`)
         setAudioResult(data)
-        await saveResult(current.id, data.correct)
-        setResults(prev => [...prev, { vocabId: current.id, correct: data.correct, german: current.german, french: current.french }])
+        await saveResult(item.id, data.correct)
+        setResults(prev => [
+          ...prev,
+          { vocabId: item.id, correct: data.correct, german: item.german, french: item.french },
+        ])
       } catch (err) {
         debugLog(`interpret error: ${err}`)
         setMicError('Erreur lors de l\'interprétation.')
@@ -319,6 +433,15 @@ export default function QuizPage() {
     recognition.start()
     debugLog('recognition.start() called')
   }
+
+  useEffect(() => {
+    if (loading || mode !== 'audio' || !current || done) return
+    speakFrenchThenListen(current.french)
+    return () => {
+      audioGenRef.current += 1
+      clearFrenchPromptSchedule()
+    }
+  }, [currentIndex, loading, mode, done, current?.id])
 
   function stopRecording() {
     debugLog('stopRecording called manually')
@@ -333,6 +456,23 @@ export default function QuizPage() {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <p className="text-gray-400 text-lg">Chargement…</p>
+      </div>
+    )
+  }
+
+  if (loadError) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center p-6">
+        <div className="bg-white rounded-2xl shadow-md p-8 text-center max-w-md w-full">
+          <h2 className="text-2xl font-extrabold text-primary mb-2">Erreur de chargement</h2>
+          <p className="text-gray-500 mb-5">{loadError}</p>
+          <button
+            onClick={() => router.push(`/${userId}/german`)}
+            className="w-full bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-light transition-colors"
+          >
+            Retour au menu
+          </button>
+        </div>
       </div>
     )
   }
@@ -384,7 +524,13 @@ export default function QuizPage() {
                 fetch('/api/quiz/start', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({ units, count: countParam }),
+                  body: JSON.stringify({
+                    units,
+                    count: countParam,
+                    user_id: parseInt(userId),
+                    mode,
+                    smart: smartMode,
+                  }),
                 })
                   .then(r => r.json())
                   .then(data => { setItems(data); setLoading(false); startTimeRef.current = Date.now() })
@@ -394,7 +540,7 @@ export default function QuizPage() {
               Recommencer
             </button>
             <button
-              onClick={() => router.push(`/${userId}`)}
+              onClick={() => router.push(`/${userId}/german`)}
               className="flex-1 border-2 border-primary text-primary py-3 rounded-xl font-bold hover:bg-primary/5 transition-colors"
             >
               Retour au menu
@@ -411,7 +557,7 @@ export default function QuizPage() {
         {/* Top nav */}
         <div className="flex items-center justify-between mb-4">
           <button
-            onClick={() => router.push(`/${userId}`)}
+            onClick={() => router.push(`/${userId}/german`)}
             className="text-sm font-semibold text-gray-400 hover:text-primary transition-colors"
           >
             ← Menu
@@ -500,7 +646,7 @@ export default function QuizPage() {
                   onKeyDown={e => {
                     if (e.key === 'Enter') handleTypingSubmit()
                   }}
-                  disabled={!!typingResult?.shown}
+                  readOnly={!!typingResult?.shown}
                   placeholder="Écris la réponse en allemand…"
                   className={`w-full border-2 rounded-xl px-4 py-3 text-primary font-semibold text-lg outline-none transition-colors ${
                     typingResult?.shown
@@ -555,14 +701,11 @@ export default function QuizPage() {
               <div className="flex items-center gap-3 mb-8">
                 <p className="text-2xl font-bold text-primary text-center">{current.french}</p>
                 <button
+                  type="button"
                   onClick={() => {
-                    const u = new SpeechSynthesisUtterance(current.french)
-                    u.lang = 'fr-FR'
-                    u.rate = 0.9
-                    window.speechSynthesis.cancel()
-                    window.speechSynthesis.speak(u)
+                    speakFrenchThenListen(current.french)
                   }}
-                  title="Réécouter"
+                  title="Réécouter et répondre"
                   className="flex-shrink-0 w-9 h-9 rounded-full bg-gray-100 hover:bg-accent/20 flex items-center justify-center text-lg transition-colors"
                 >
                   🔊
@@ -577,20 +720,31 @@ export default function QuizPage() {
 
               {!audioResult && !audioLoading && (
                 <button
-                  onClick={recording ? stopRecording : startRecording}
+                  type="button"
+                  onClick={
+                    recording
+                      ? stopRecording
+                      : () => {
+                          cancelSynthAndScheduledListen()
+                          startRecording()
+                        }
+                  }
                   className={`w-24 h-24 rounded-full flex items-center justify-center text-4xl shadow-lg transition-all ${
                     recording
                       ? 'bg-rose-500 text-white mic-pulsing'
                       : 'bg-primary text-white hover:bg-primary-light hover:scale-105'
                   }`}
+                  aria-label={recording ? 'Arrêter' : 'Parler tout de suite'}
                 >
                   {recording ? '⏹' : '🎤'}
                 </button>
               )}
 
               {!audioResult && !audioLoading && (
-                <p className="mt-3 text-xs text-gray-400">
-                  {recording ? 'En écoute… [Espace] pour arrêter' : '[Espace] pour parler'}
+                <p className="mt-3 text-xs text-gray-400 text-center max-w-sm">
+                  {recording
+                    ? 'En écoute… Parle puis attends l’analyse · [Espace] pour arrêter'
+                    : 'Le micro s’active tout seul après la lecture française — ou utilise le bouton / [Espace] pour passer tout de suite en écoute.'}
                 </p>
               )}
 
