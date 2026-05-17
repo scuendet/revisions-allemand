@@ -5,7 +5,7 @@ import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { DEFAULT_VERBES_5P_GROUP } from '@/lib/verbGroups'
 
-const ALL_TENSES = ['présent', 'imparfait', 'conditionnel', 'passé composé', 'futur', 'impératif', 'passé simple']
+const ALL_TENSES = ['présent', 'imparfait', 'conditionnel', 'passé composé', 'futur', 'impératif', 'plus-que-parfait', 'futur antérieur']
 const ALL_VERBS = [
   'avoir', 'être', 'chanter', 'oublier', 'manger', 'commencer', 'peler', 'acheter',
   'employer', 'envoyer', 'payer', 'aller', 'finir', 'sortir', 'courir', 'venir',

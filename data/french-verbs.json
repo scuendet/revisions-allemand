@@ -6166,5 +6166,2249 @@
     "tense": "impératif",
     "pronoun": "vous",
     "correct_answer": "prenez"
+  },
+  {
+    "verb": "avoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient eu"
+  },
+  {
+    "verb": "avoir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront eu"
+  },
+  {
+    "verb": "être",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais été"
+  },
+  {
+    "verb": "être",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai été"
+  },
+  {
+    "verb": "être",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais été"
+  },
+  {
+    "verb": "être",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras été"
+  },
+  {
+    "verb": "être",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait été"
+  },
+  {
+    "verb": "être",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura été"
+  },
+  {
+    "verb": "être",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions été"
+  },
+  {
+    "verb": "être",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons été"
+  },
+  {
+    "verb": "être",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez été"
+  },
+  {
+    "verb": "être",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez été"
+  },
+  {
+    "verb": "être",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient été"
+  },
+  {
+    "verb": "être",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront été"
+  },
+  {
+    "verb": "chanter",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient chanté"
+  },
+  {
+    "verb": "chanter",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront chanté"
+  },
+  {
+    "verb": "oublier",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient oublié"
+  },
+  {
+    "verb": "oublier",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront oublié"
+  },
+  {
+    "verb": "manger",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient mangé"
+  },
+  {
+    "verb": "manger",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront mangé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient commencé"
+  },
+  {
+    "verb": "commencer",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront commencé"
+  },
+  {
+    "verb": "peler",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient pelé"
+  },
+  {
+    "verb": "peler",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront pelé"
+  },
+  {
+    "verb": "acheter",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient acheté"
+  },
+  {
+    "verb": "acheter",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront acheté"
+  },
+  {
+    "verb": "employer",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient employé"
+  },
+  {
+    "verb": "employer",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront employé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient envoyé"
+  },
+  {
+    "verb": "envoyer",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront envoyé"
+  },
+  {
+    "verb": "payer",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient payé"
+  },
+  {
+    "verb": "payer",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront payé"
+  },
+  {
+    "verb": "aller",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "étais allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "serai allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "étais allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "seras allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "était allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sera allé"
+  },
+  {
+    "verb": "aller",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "étions allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "serons allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "étiez allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "serez allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "étaient allés"
+  },
+  {
+    "verb": "aller",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "seront allés"
+  },
+  {
+    "verb": "finir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient fini"
+  },
+  {
+    "verb": "finir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront fini"
+  },
+  {
+    "verb": "sortir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "étais sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "serai sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "étais sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "seras sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "était sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sera sorti"
+  },
+  {
+    "verb": "sortir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "étions sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "serons sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "étiez sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "serez sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "étaient sortis"
+  },
+  {
+    "verb": "sortir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "seront sortis"
+  },
+  {
+    "verb": "courir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient couru"
+  },
+  {
+    "verb": "courir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront couru"
+  },
+  {
+    "verb": "venir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "étais venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "serai venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "étais venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "seras venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "était venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "sera venu"
+  },
+  {
+    "verb": "venir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "étions venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "serons venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "étiez venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "serez venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "étaient venus"
+  },
+  {
+    "verb": "venir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "seront venus"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient pu"
+  },
+  {
+    "verb": "pouvoir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront pu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient voulu"
+  },
+  {
+    "verb": "vouloir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront voulu"
+  },
+  {
+    "verb": "devoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient dû"
+  },
+  {
+    "verb": "devoir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront dû"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient reçu"
+  },
+  {
+    "verb": "recevoir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront reçu"
+  },
+  {
+    "verb": "savoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient su"
+  },
+  {
+    "verb": "savoir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront su"
+  },
+  {
+    "verb": "pleuvoir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait plu"
+  },
+  {
+    "verb": "pleuvoir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura plu"
+  },
+  {
+    "verb": "voir",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient vu"
+  },
+  {
+    "verb": "voir",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront vu"
+  },
+  {
+    "verb": "croire",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient cru"
+  },
+  {
+    "verb": "croire",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront cru"
+  },
+  {
+    "verb": "écrire",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient écrit"
+  },
+  {
+    "verb": "écrire",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront écrit"
+  },
+  {
+    "verb": "lire",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient lu"
+  },
+  {
+    "verb": "lire",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront lu"
+  },
+  {
+    "verb": "dire",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient dit"
+  },
+  {
+    "verb": "dire",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront dit"
+  },
+  {
+    "verb": "faire",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient fait"
+  },
+  {
+    "verb": "faire",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront fait"
+  },
+  {
+    "verb": "mettre",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient mis"
+  },
+  {
+    "verb": "mettre",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront mis"
+  },
+  {
+    "verb": "connaître",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient connu"
+  },
+  {
+    "verb": "connaître",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront connu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient entendu"
+  },
+  {
+    "verb": "entendre",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront entendu"
+  },
+  {
+    "verb": "prendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "je",
+    "correct_answer": "avais pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur antérieur",
+    "pronoun": "je",
+    "correct_answer": "aurai pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "tu",
+    "correct_answer": "avais pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur antérieur",
+    "pronoun": "tu",
+    "correct_answer": "auras pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "il/elle/on",
+    "correct_answer": "avait pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur antérieur",
+    "pronoun": "il/elle/on",
+    "correct_answer": "aura pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "nous",
+    "correct_answer": "avions pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur antérieur",
+    "pronoun": "nous",
+    "correct_answer": "aurons pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "vous",
+    "correct_answer": "aviez pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur antérieur",
+    "pronoun": "vous",
+    "correct_answer": "aurez pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "plus-que-parfait",
+    "pronoun": "ils/elles",
+    "correct_answer": "avaient pris"
+  },
+  {
+    "verb": "prendre",
+    "tense": "futur antérieur",
+    "pronoun": "ils/elles",
+    "correct_answer": "auront pris"
   }
 ]
