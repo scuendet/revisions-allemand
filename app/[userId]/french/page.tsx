@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { DEFAULT_VERBES_5P_GROUP } from '@/lib/verbGroups'
@@ -30,6 +30,33 @@ export default function FrenchHubPage() {
   const [count, setCount] = useState<10 | 20 | 'all'>(10)
   const [verbsOpen, setVerbsOpen] = useState(false)
   const [tensesOpen, setTensesOpen] = useState(false)
+  const [unmasteredVerbTenses, setUnmasteredVerbTenses] = useState<Set<string>>(new Set())
+
+  const hasEnoughUnmastered = selectedVerbs.some(v =>
+    selectedTenses.some(t => unmasteredVerbTenses.has(`${v}|${t}`))
+  )
+  const canUseHardMode =
+    selectedTenses.length >= 4 &&
+    selectedVerbs.length >= 10 &&
+    hasEnoughUnmastered
+
+  useEffect(() => {
+    fetch(`/api/french/mastered?userId=${userId}`)
+      .then(r => r.json())
+      .then(data => {
+        if (Array.isArray(data.unmasteredVerbTenses)) {
+          setUnmasteredVerbTenses(new Set(data.unmasteredVerbTenses))
+        }
+      })
+      .catch(() => {})
+  }, [userId])
+
+  // Auto-downgrade if hard mode becomes ineligible
+  useEffect(() => {
+    if (difficulty === 'hard' && !canUseHardMode) {
+      setDifficulty('medium')
+    }
+  }, [difficulty, canUseHardMode])
 
   function toggleVerb(v: string) {
     setSelectedVerbs(prev => prev.includes(v) ? prev.filter(x => x !== v) : [...prev, v])
@@ -50,12 +77,18 @@ export default function FrenchHubPage() {
     setVerbsOpen(false)
   }
 
+  function handleSetDifficulty(d: 'easy' | 'medium' | 'hard') {
+    if (d === 'hard' && !canUseHardMode) return
+    setDifficulty(d)
+  }
+
   function startQuiz() {
     if (selectedVerbs.length === 0 || selectedTenses.length === 0) return
+    const effectiveDifficulty = difficulty === 'hard' && !canUseHardMode ? 'medium' : difficulty
     const p = new URLSearchParams({
       verbs: selectedVerbs.join(','),
       tenses: selectedTenses.join(','),
-      difficulty,
+      difficulty: effectiveDifficulty,
       count: String(count),
     })
     router.push(`/${userId}/french/quiz?${p.toString()}`)
@@ -187,25 +220,37 @@ export default function FrenchHubPage() {
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
           <h2 className="font-extrabold text-primary text-lg mb-4">3. Difficulté</h2>
           <div className="grid grid-cols-3 gap-3">
-            {DIFFICULTIES.map(d => (
-              <button
-                key={d.id}
-                onClick={() => setDifficulty(d.id)}
-                className={`flex flex-col items-center gap-1 p-4 rounded-xl border-2 transition-all ${
-                  difficulty === d.id
-                    ? 'border-accent bg-accent/10 shadow-sm'
-                    : 'border-gray-200 hover:border-accent/50'
-                }`}
-              >
-                <span className="font-bold text-primary text-sm">{d.label}</span>
-                <span className={`text-xs font-bold ${
-                  d.color === 'emerald' ? 'text-emerald-600' :
-                  d.color === 'amber' ? 'text-amber-600' : 'text-rose-600'
-                }`}>{d.multiplier} pts</span>
-                <span className="text-xs text-gray-500 text-center leading-snug">{d.desc}</span>
-              </button>
-            ))}
+            {DIFFICULTIES.map(d => {
+              const isHardLocked = d.id === 'hard' && !canUseHardMode
+              return (
+                <button
+                  key={d.id}
+                  onClick={() => handleSetDifficulty(d.id)}
+                  disabled={isHardLocked}
+                  title={isHardLocked ? 'Nécessite ≥4 temps, ≥10 verbes et des verbes non encore maîtrisés' : undefined}
+                  className={`flex flex-col items-center gap-1 p-4 rounded-xl border-2 transition-all ${
+                    isHardLocked
+                      ? 'border-gray-200 opacity-40 cursor-not-allowed'
+                      : difficulty === d.id
+                        ? 'border-accent bg-accent/10 shadow-sm'
+                        : 'border-gray-200 hover:border-accent/50'
+                  }`}
+                >
+                  <span className="font-bold text-primary text-sm">{d.label}</span>
+                  <span className={`text-xs font-bold ${
+                    d.color === 'emerald' ? 'text-emerald-600' :
+                    d.color === 'amber' ? 'text-amber-600' : 'text-rose-600'
+                  }`}>{d.multiplier} pts</span>
+                  <span className="text-xs text-gray-500 text-center leading-snug">{d.desc}</span>
+                </button>
+              )
+            })}
           </div>
+          {!canUseHardMode && (
+            <p className="mt-3 text-xs text-gray-400 text-center">
+              Mode difficile : sélectionne ≥4 temps, ≥10 verbes dont certains non encore maîtrisés.
+            </p>
+          )}
         </div>
 
         {/* Count */}

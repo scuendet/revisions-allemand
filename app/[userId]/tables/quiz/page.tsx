@@ -86,6 +86,7 @@ export default function TablesQuizPage() {
     return set.size > 0 ? [...set].sort((a, b) => a - b) : Array.from({ length: 11 }, (_, i) => i + 2)
   }, [tablesParamKey])
 
+  const [sessionKey, setSessionKey] = useState(0)
   const [items, setItems] = useState<TableQuestion[]>([])
   const [loading, setLoading] = useState(true)
   const [loadError, setLoadError] = useState('')
@@ -96,6 +97,7 @@ export default function TablesQuizPage() {
   const resultsRef = useRef<AttemptResult[]>([])
   const [lastSessionPoints, setLastSessionPoints] = useState<{
     base: number
+    timerDoubled: boolean
     bonus: number
     total: number
   } | null>(null)
@@ -175,7 +177,7 @@ export default function TablesQuizPage() {
       .finally(() => {
         setLoading(false)
       })
-  }, [count, tablesSelection, userId, mode, smartMode])
+  }, [count, tablesSelection, userId, mode, smartMode, sessionKey])
 
   useEffect(() => {
     tablesQuestionRef.current = current ?? null
@@ -341,11 +343,13 @@ export default function TablesQuizPage() {
     const correctN = list.filter(r => r.correct).length
     const allPerfect = totalN > 0 && correctN === totalN
     const basePoints = Math.floor(correctN / 3)
+    const effectiveBase = timerEnabled ? basePoints * 2 : basePoints
     const bonusPoints = allPerfect ? MATH_PERFECT_SESSION_BONUS : 0
     setLastSessionPoints({
       base: basePoints,
+      timerDoubled: timerEnabled,
       bonus: bonusPoints,
-      total: basePoints + bonusPoints,
+      total: effectiveBase + bonusPoints,
     })
     setElapsed(duration)
     setDone(true)
@@ -547,6 +551,10 @@ export default function TablesQuizPage() {
     router.push(`/${userId}/tables`)
   }
 
+  function restartSameSeries() {
+    setSessionKey(k => k + 1)
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
@@ -611,11 +619,16 @@ export default function TablesQuizPage() {
                 <li>
                   Règle tables :{' '}
                   <span className="font-semibold">
-                    {correctCount} bonne(s) réponse · {Math.floor(correctCount / 3)} pt
-                    {Math.floor(correctCount / 3) !== 1 ? 's' : ''}
+                    {correctCount} bonne(s) réponse · {lastSessionPoints.base} pt
+                    {lastSessionPoints.base !== 1 ? 's' : ''}
                   </span>{' '}
                   <span className="text-amber-800/90">(1 pt par 3 justes)</span>
                 </li>
+                {lastSessionPoints.timerDoubled ? (
+                  <li className="font-semibold text-violet-700">
+                    ⚡ Bonus timer 5s : ×2 → +{lastSessionPoints.base} pt{lastSessionPoints.base !== 1 ? 's' : ''} supplémentaires
+                  </li>
+                ) : null}
                 {lastSessionPoints.bonus > 0 ? (
                   <li className="font-semibold text-emerald-700">
                     🌟 Bonus série parfaite : +{lastSessionPoints.bonus} pts
@@ -628,19 +641,27 @@ export default function TablesQuizPage() {
             </div>
           ) : null}
 
-          <div className="flex gap-3">
+          <div className="flex flex-col gap-3">
             <button
-              onClick={restart}
-              className="flex-1 bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-light transition-colors"
+              onClick={restartSameSeries}
+              className="w-full bg-emerald-500 text-white py-3 rounded-xl font-bold hover:bg-emerald-600 transition-colors"
             >
-              Reconfigurer
+              Recommencer (mêmes paramètres)
             </button>
-            <button
-              onClick={() => router.push(`/${userId}/math`)}
-              className="flex-1 border-2 border-primary text-primary py-3 rounded-xl font-bold hover:bg-primary/5 transition-colors"
-            >
-              Retour menu
-            </button>
+            <div className="flex gap-3">
+              <button
+                onClick={restart}
+                className="flex-1 bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-light transition-colors"
+              >
+                Reconfigurer
+              </button>
+              <button
+                onClick={() => router.push(`/${userId}/math`)}
+                className="flex-1 border-2 border-primary text-primary py-3 rounded-xl font-bold hover:bg-primary/5 transition-colors"
+              >
+                Retour menu
+              </button>
+            </div>
           </div>
         </div>
       </div>
