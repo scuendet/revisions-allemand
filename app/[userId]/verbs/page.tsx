@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
+import { SubjectPageHeader } from '@/components/SubjectPageHeader'
 
 interface Verb {
   id: number
@@ -144,12 +145,17 @@ export default function VerbsPage() {
 
   if (phase === 'config') {
     return (
-      <div className="min-h-screen bg-background flex flex-col items-center justify-center p-6">
-        <div className="w-full max-w-md">
-          <div className="flex items-center gap-3 mb-8">
-            <button onClick={() => router.push(`/${userId}/german`)} className="text-gray-400 hover:text-primary transition-colors font-semibold">← Retour</button>
-            <h1 className="text-2xl font-extrabold text-primary">Conjugaison</h1>
-          </div>
+      <div className="min-h-screen bg-background p-6">
+        <div className="max-w-xl mx-auto">
+          <SubjectPageHeader
+            userId={userId}
+            subject="Conjugaison"
+            subtitle="Écris les 6 formes conjuguées"
+            backHref={`/${userId}/german`}
+            backLabel="← Allemand"
+            showChecks={false}
+            progressHref={`/${userId}/progress?branch=allemand`}
+          />
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-4">
             <h2 className="font-extrabold text-primary text-lg mb-4">Nombre de verbes</h2>

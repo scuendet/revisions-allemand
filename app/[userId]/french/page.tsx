@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { DEFAULT_VERBES_5P_GROUP } from '@/lib/verbGroups'
+import { SubjectPageHeader } from '@/components/SubjectPageHeader'
 
 const ALL_TENSES = ['présent', 'imparfait', 'conditionnel', 'passé composé', 'futur', 'impératif', 'plus-que-parfait', 'futur antérieur']
 const ALL_VERBS = [
@@ -99,29 +100,12 @@ export default function FrenchHubPage() {
   return (
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-xl mx-auto">
-        {/* Nav */}
-        <div className="flex items-center gap-3 mb-6">
-          <Link href={`/${userId}`} className="text-sm font-semibold text-gray-400 hover:text-primary transition-colors">
-            ← Matières
-          </Link>
-          <span className="text-gray-200">|</span>
-          <span className="text-sm font-bold text-primary">Français</span>
-        </div>
-
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h1 className="text-3xl font-extrabold text-primary">Français</h1>
-            <p className="text-gray-500 text-sm mt-0.5">Conjugaison des verbes</p>
-          </div>
-          <div className="flex flex-wrap gap-2 justify-end">
-            <Link href={`/${userId}/checks`} className="text-sm font-semibold text-amber-800 border border-amber-300 rounded-xl px-4 py-2 bg-amber-50 hover:bg-amber-100 transition-colors">
-              Chèques
-            </Link>
-            <Link href={`/${userId}/progress?branch=français`} className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors">
-              Progrès →
-            </Link>
-          </div>
-        </div>
+        <SubjectPageHeader
+          userId={userId}
+          subject="Français"
+          subtitle="Conjugaison des verbes"
+          progressHref={`/${userId}/progress?branch=français`}
+        />
 
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 mb-4">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

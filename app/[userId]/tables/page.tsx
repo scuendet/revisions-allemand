@@ -2,9 +2,9 @@
 
 import { useCallback, useMemo, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import Link from 'next/link'
 import { SmartModeExplainer } from '@/components/SmartModeExplainer'
 import { SmartSelectionPreview } from '@/components/SmartSelectionPreview'
+import { SubjectPageHeader } from '@/components/SubjectPageHeader'
 
 type TablesMode = 'flashcard' | 'audio' | 'typing'
 
@@ -72,30 +72,15 @@ export default function TablesSetupPage() {
   return (
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-xl mx-auto">
-        <div className="inline-flex rounded-xl border border-gray-200 bg-white p-1 mb-4">
-          <Link
-            href={`/${userId}/german`}
-            className="rounded-lg px-4 py-1.5 text-sm font-semibold text-gray-500 hover:text-primary transition-colors"
-          >
-            Allemand
-          </Link>
-          <span className="rounded-lg bg-primary px-4 py-1.5 text-sm font-bold text-white">
-            Math
-          </span>
-        </div>
-
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h1 className="text-3xl font-extrabold text-primary">Math</h1>
-            <p className="text-gray-500 text-sm mt-0.5">Tables de multiplication</p>
-          </div>
-          <Link
-            href={`/${userId}/math`}
-            className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors"
-          >
-            ← Exercices math
-          </Link>
-        </div>
+        <SubjectPageHeader
+          userId={userId}
+          subject="Tables de multiplication"
+          subtitle="Tables 2 à 12, 3 modes + chrono"
+          backHref={`/${userId}/math`}
+          backLabel="← Exercices math"
+          progressHref={`/${userId}/progress?branch=math`}
+          progressLabel="Dashboard →"
+        />
 
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
           <div className="flex flex-wrap items-start justify-between gap-3 mb-3">

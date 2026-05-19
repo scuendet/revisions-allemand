@@ -2,8 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useParams, useRouter, useSearchParams } from 'next/navigation'
-import Link from 'next/link'
 import { MATH_PERFECT_SESSION_BONUS } from '@/lib/checksConfig'
+import { QuizChrome } from '@/components/QuizChrome'
 
 type TablesMode = 'flashcard' | 'audio' | 'typing'
 
@@ -673,46 +673,18 @@ export default function TablesQuizPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col p-6">
       <div className="w-full max-w-lg mx-auto flex-1 flex flex-col">
-        <div className="inline-flex rounded-xl border border-gray-200 bg-white p-1 mb-4 w-fit">
-          <Link
-            href={`/${userId}/math`}
-            className="rounded-lg px-4 py-1.5 text-sm font-semibold text-gray-500 hover:text-primary transition-colors"
-          >
-            Allemand
-          </Link>
-          <span className="rounded-lg bg-primary px-4 py-1.5 text-sm font-bold text-white">
-            Math
-          </span>
-        </div>
-
-        <div className="flex items-center justify-between mb-4">
-          <button
-            onClick={() => router.push(`/${userId}/tables`)}
-            className="text-sm font-semibold text-gray-400 hover:text-primary transition-colors"
-          >
-            ← Exercices math
-          </button>
-          <span className="text-xs font-semibold text-gray-300 uppercase tracking-wide">
-            {mode === 'flashcard' ? '🃏 Flashcards' : mode === 'audio' ? '🎤 Audio' : '⌨️ Frappe'}
-          </span>
-        </div>
-
-        <div className={`mb-6 ${timeoutShake ? 'animate-[timeoutshake_0.36s_ease-in-out_2]' : ''}`}>
-          <div className="flex justify-between text-sm font-semibold text-gray-500 mb-1.5">
-            <span>Question {currentIndex + 1} / {items.length}</span>
-            <span className="flex items-center gap-3">
-              {timerEnabled && <span className="text-rose-500">⏳ {timerSeconds}s</span>}
-              <span className="text-gray-400 font-normal tabular-nums">⏱ {fmtTime(elapsed)}</span>
-              <span>{correctCount} correctes</span>
-            </span>
-          </div>
-          <div className="w-full h-2.5 bg-gray-200 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-accent rounded-full transition-all duration-500"
-              style={{ width: `${(currentIndex / items.length) * 100}%` }}
-            />
-          </div>
-        </div>
+        <QuizChrome
+          backLabel="← Exercices math"
+          onBack={() => router.push(`/${userId}/tables`)}
+          modeLabel={mode === 'flashcard' ? '🃏 Flashcards' : mode === 'audio' ? '🎤 Audio' : '⌨️ Frappe'}
+          currentIndex={currentIndex}
+          total={items.length}
+          elapsed={elapsed}
+          correctCount={correctCount}
+          timerEnabled={timerEnabled}
+          timerSeconds={timerSeconds}
+          shakeClass={timeoutShake ? 'animate-[timeoutshake_0.36s_ease-in-out_2]' : ''}
+        />
 
         <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 mb-4 text-center">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Calcule</p>

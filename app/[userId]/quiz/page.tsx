@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { useParams, useSearchParams, useRouter } from 'next/navigation'
+import { QuizChrome } from '@/components/QuizChrome'
 
 interface VocabItem {
   id: number
@@ -554,35 +555,15 @@ export default function QuizPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col p-6">
       <div className="w-full max-w-lg mx-auto flex-1 flex flex-col">
-        {/* Top nav */}
-        <div className="flex items-center justify-between mb-4">
-          <button
-            onClick={() => router.push(`/${userId}/german`)}
-            className="text-sm font-semibold text-gray-400 hover:text-primary transition-colors"
-          >
-            ← Menu
-          </button>
-          <span className="text-xs font-semibold text-gray-300 uppercase tracking-wide">
-            {mode === 'flashcard' ? '🃏 Flashcards' : mode === 'audio' ? '🎤 Audio' : '⌨️ Frappe'}
-          </span>
-        </div>
-
-        {/* Progress bar */}
-        <div className="mb-6">
-          <div className="flex justify-between text-sm font-semibold text-gray-500 mb-1.5">
-            <span>Question {currentIndex + 1} / {items.length}</span>
-            <span className="flex items-center gap-3">
-              <span className="text-gray-400 font-normal tabular-nums">⏱ {formatTime(elapsed)}</span>
-              <span>{correctCount} correctes</span>
-            </span>
-          </div>
-          <div className="w-full h-2.5 bg-gray-200 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-accent rounded-full transition-all duration-500"
-              style={{ width: `${((currentIndex) / items.length) * 100}%` }}
-            />
-          </div>
-        </div>
+        <QuizChrome
+          backLabel="← Menu"
+          onBack={() => router.push(`/${userId}/german`)}
+          modeLabel={mode === 'flashcard' ? '🃏 Flashcards' : mode === 'audio' ? '🎤 Audio' : '⌨️ Frappe'}
+          currentIndex={currentIndex}
+          total={items.length}
+          elapsed={elapsed}
+          correctCount={correctCount}
+        />
 
         {/* Mode: Flashcard */}
         {mode === 'flashcard' && (

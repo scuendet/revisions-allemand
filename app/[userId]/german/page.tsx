@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { UnitVocabPractice } from '@/components/UnitVocabPractice'
 import { SmartModeExplainer } from '@/components/SmartModeExplainer'
 import { SmartSelectionPreview } from '@/components/SmartSelectionPreview'
+import { SubjectPageHeader } from '@/components/SubjectPageHeader'
 
 interface VocabUnit {
   unit: number
@@ -71,29 +72,13 @@ export default function GermanHubPage() {
   return (
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-xl mx-auto">
-        {/* Nav */}
-        <div className="flex items-center gap-3 mb-6">
-          <Link href={`/${userId}`} className="text-sm font-semibold text-gray-400 hover:text-primary transition-colors">
-            ← Matières
-          </Link>
-          <span className="text-gray-200">|</span>
-          <span className="text-sm font-bold text-primary">Allemand</span>
-        </div>
-
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h1 className="text-3xl font-extrabold text-primary">Allemand</h1>
-            <p className="text-gray-500 text-sm mt-0.5">Prépare ta session d'allemand</p>
-          </div>
-          <div className="flex flex-wrap gap-2 justify-end">
-            <Link href={`/${userId}/checks`} className="text-sm font-semibold text-amber-800 border border-amber-300 rounded-xl px-4 py-2 bg-amber-50 hover:bg-amber-100 transition-colors">
-              Chèques
-            </Link>
-            <Link href={`/${userId}/progress?branch=allemand`} className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors">
-              Mes progrès →
-            </Link>
-          </div>
-        </div>
+        <SubjectPageHeader
+          userId={userId}
+          subject="Allemand"
+          subtitle="Prépare ta session d'allemand"
+          progressHref={`/${userId}/progress?branch=allemand`}
+          progressLabel="Mes progrès →"
+        />
 
         {/* Units */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
