@@ -1139,5 +1139,131 @@
     "unit_title": "Was kannst du machen?",
     "french": "fermé, fermée",
     "german": "geschlossen"
+  },
+  {
+    "id": 164,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "passer ses vacances",
+    "german": "Ferien machen"
+  },
+  {
+    "id": 165,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "au bord de la mer",
+    "german": "am Meer"
+  },
+  {
+    "id": 166,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "en colonie de vacances",
+    "german": "im Ferienlager"
+  },
+  {
+    "id": 167,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "à la maison",
+    "german": "zu Hause"
+  },
+  {
+    "id": 168,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "à la montagne",
+    "german": "in den Bergen"
+  },
+  {
+    "id": 169,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "au bord d'un lac",
+    "german": "am See"
+  },
+  {
+    "id": 170,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "chez grand-maman et grand-Papa",
+    "german": "bei Oma und Opa"
+  },
+  {
+    "id": 171,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "simplement",
+    "german": "einfach"
+  },
+  {
+    "id": 172,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "vrai·e",
+    "german": "wahr"
+  },
+  {
+    "id": 173,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "vivre",
+    "german": "leben"
+  },
+  {
+    "id": 174,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "toute la journée",
+    "german": "den ganzen Tag"
+  },
+  {
+    "id": 175,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "faire de la randonnée",
+    "german": "wandern"
+  },
+  {
+    "id": 176,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "le/la meilleur·e",
+    "german": "der/die/das beste"
+  },
+  {
+    "id": 177,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "les vacances de rêve",
+    "german": "die Traumferien"
+  },
+  {
+    "id": 178,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "le rêve",
+    "german": "der Traum, -e"
+  },
+  {
+    "id": 179,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "le jour férié",
+    "german": "der Feiertag, -e"
+  },
+  {
+    "id": 180,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "les vacances",
+    "german": "der Urlaub, -e"
+  },
+  {
+    "id": 181,
+    "unit": 10,
+    "unit_title": "Ferien",
+    "french": "typique",
+    "german": "typisch"
   }
 ]
