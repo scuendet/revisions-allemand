@@ -108,11 +108,11 @@ function maxIso(dates: (string | null | undefined)[]): string | null {
 
 function lastFrenchIso(dash: FrenchDash | null): string | null {
   if (!dash) return null
-  const fromSessions = dash.recentSessions.flatMap(s => [s.ended_at, s.started_at].filter(Boolean) as string[])
+  const fromSessions = (dash.recentSessions ?? []).flatMap(s => [s.ended_at, s.started_at].filter(Boolean) as string[])
   const fromSessionsMax = maxIso(fromSessions)
   if (fromSessionsMax) return fromSessionsMax
-  if (dash.dailyStats.length > 0) {
-    const lastDay = dash.dailyStats[dash.dailyStats.length - 1]!.date
+  if ((dash.dailyStats ?? []).length > 0) {
+    const lastDay = (dash.dailyStats ?? [])[dash.dailyStats.length - 1]!.date
     return `${lastDay}T12:00:00.000Z`
   }
   return null
