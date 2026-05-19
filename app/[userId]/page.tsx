@@ -181,7 +181,7 @@ export default function SubjectSelectorPage() {
 
   const germanDates = [...words.map(w => w.last_attempted), ...verbs.map(v => v.last_attempted)]
   const germanLast = maxIso(germanDates)
-  const mathLast = math ? maxIso(math.by_table.map(t => t.last_attempted)) : null
+  const mathLast = math?.by_table ? maxIso(math.by_table.map(t => t.last_attempted)) : null
   const frenchLast = lastFrenchIso(french)
 
   const germanProgressPct =
