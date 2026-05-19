@@ -38,6 +38,17 @@ interface FrenchDash {
   recentSessions: Array<{ started_at: string; ended_at?: string }>
 }
 
+interface EnglishProgress {
+  summary: {
+    total_attempts: number
+    correct_attempts: number
+    total_sessions: number
+    total_seconds: number
+    last_attempted: string | null
+  }
+  detail: Array<{ total_attempts: number; correct_attempts: number; last_attempted: string | null }>
+}
+
 const SUBJECT_DEFS = [
   {
     id: 'german' as const,
@@ -50,6 +61,18 @@ const SUBJECT_DEFS = [
     bar: 'bg-blue-500',
     practiceHref: (uid: string) => `/${uid}/german`,
     resultsHref: (uid: string) => `/${uid}/progress?branch=allemand`,
+  },
+  {
+    id: 'english' as const,
+    flag: '🇬🇧',
+    title: 'Anglais',
+    subtitle: 'Vocabulaire (EN)',
+    color: 'from-emerald-600 to-emerald-800',
+    border: 'border-emerald-200',
+    accent: 'text-emerald-700',
+    bar: 'bg-emerald-500',
+    practiceHref: (uid: string) => `/${uid}/english`,
+    resultsHref: (uid: string) => `/${uid}/progress?branch=english`,
   },
   {
     id: 'math' as const,
@@ -125,6 +148,7 @@ export default function SubjectSelectorPage() {
   const [verbs, setVerbs] = useState<VerbStat[]>([])
   const [math, setMath] = useState<MathProgress | null>(null)
   const [french, setFrench] = useState<FrenchDash | null>(null)
+  const [englishProgress, setEnglishProgress] = useState<EnglishProgress | null>(null)
 
   useEffect(() => {
     Promise.all([
@@ -132,11 +156,13 @@ export default function SubjectSelectorPage() {
       fetch(`/api/verbs/progress/${userId}`).then(r => r.json()),
       fetch(`/api/math/progress/${userId}`).then(r => r.json()),
       fetch(`/api/french/dashboard/${userId}`).then(r => (r.ok ? r.json() : null)),
-    ]).then(([w, v, m, fr]) => {
+      fetch(`/api/english/progress/${userId}`).then(r => (r.ok ? r.json() : null)),
+    ]).then(([w, v, m, fr, en]) => {
       setWords(Array.isArray(w) ? w : [])
       setVerbs(Array.isArray(v) ? v : [])
       setMath(m)
       setFrench(fr)
+      setEnglishProgress(en)
       setLoading(false)
     })
   }, [userId])
@@ -169,7 +195,30 @@ export default function SubjectSelectorPage() {
   const frenchPct =
     french && french.totalAttempts > 0 ? Math.round(french.overallAccuracy * 100) : null
 
+  // English stats
+  const enDetail = englishProgress?.detail ?? []
+  const enTotal = enDetail.length
+  const enMastered = enDetail.filter(w => w.total_attempts > 0 && w.correct_attempts / w.total_attempts >= 0.7).length
+  const enAttempts = englishProgress?.summary.total_attempts ?? 0
+  const enCorrect = englishProgress?.summary.correct_attempts ?? 0
+  const enLast = englishProgress?.summary.last_attempted ?? null
+
   const rows = SUBJECT_DEFS.map(def => {
+    if (def.id === 'english') {
+      const last = formatLastActivity(enLast)
+      return {
+        ...def,
+        lastLabel: last.line,
+        lastDetail: last.detail,
+        stats: [
+          `${enMastered}/${enTotal} mots solides`,
+          enAttempts > 0
+            ? `${enAttempts} réponses · ${Math.round((enCorrect / enAttempts) * 100)}% justes`
+            : "Pas encore d'essais enregistrés",
+        ],
+        barPct: enTotal > 0 ? Math.round((enMastered / enTotal) * 100) : 0,
+      }
+    }
     if (def.id === 'german') {
       const last = formatLastActivity(germanLast)
       return {

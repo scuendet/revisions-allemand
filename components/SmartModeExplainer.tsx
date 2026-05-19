@@ -3,7 +3,7 @@
 import { useEffect, useRef, type ReactNode } from 'react'
 
 type SmartModeExplainerProps = {
-  variant: 'german' | 'tables'
+  variant: 'german' | 'english' | 'tables'
   /** Bump this (e.g. when the user ticks smart mode) to expand the panel once. */
   revealKey?: number
   /** e.g. SmartSelectionPreview — concrete examples for the current form values. */
@@ -15,6 +15,7 @@ type SmartModeExplainerProps = {
  * Uses native <details> (no modal).
  */
 export function SmartModeExplainer({ variant, revealKey = 0, preview }: SmartModeExplainerProps) {
+  const isVocab = variant === 'german' || variant === 'english'
   const isGerman = variant === 'german'
   const detailsRef = useRef<HTMLDetailsElement>(null)
   const prevReveal = useRef(0)
@@ -40,15 +41,15 @@ export function SmartModeExplainer({ variant, revealKey = 0, preview }: SmartMod
       <div className="border-t border-slate-200/80 px-4 pb-4 pt-3 space-y-3 text-sm text-slate-600">
         <p>
           <span className="font-semibold text-slate-800">Objectif : </span>
-          {isGerman ? (
+          {isVocab ? (
             <>
-              concentrer la session sur les mots où tu as le plus besoin d’aide, tout en faisant réapparaître ceux que tu
-              n’as pas revus depuis longtemps — tout en restant dans{' '}
+              concentrer la session sur les mots où tu as le plus besoin d'aide, tout en faisant réapparaître ceux que tu
+              n'as pas revus depuis longtemps — tout en restant dans{' '}
               <span className="font-semibold text-slate-800">tes unités cochées</span>.
             </>
           ) : (
             <>
-              concentrer la session sur les multiplications les plus fragiles chez toi, et celles que tu n’as pas
+              concentrer la session sur les multiplications les plus fragiles chez toi, et celles que tu n'as pas
               pratiquées récemment — toujours dans{' '}
               <span className="font-semibold text-slate-800">tes tables sélectionnées</span>.
             </>
@@ -58,7 +59,7 @@ export function SmartModeExplainer({ variant, revealKey = 0, preview }: SmartMod
           <p className="font-semibold text-slate-800 mb-1.5">On augmente la priorité quand…</p>
           <ul className="list-disc space-y-1 pl-5 leading-relaxed">
             <li>
-              {isGerman ? "le mot n’a encore aucun essai enregistré" : "tu n’as pas encore d’essai sur cette opération"}{' '}
+              {isVocab ? "le mot n'a encore aucun essai enregistré" : "tu n'as pas encore d'essai sur cette opération"}{' '}
               <span className="text-slate-400">(priorité « découverte »)</span>
             </li>
             <li>le dernier essai sur cet item est une erreur</li>
@@ -72,7 +73,7 @@ export function SmartModeExplainer({ variant, revealKey = 0, preview }: SmartMod
         <div>
           <p className="font-semibold text-slate-800 mb-1.5">On diminue un peu la priorité quand…</p>
           <p className="leading-relaxed">
-            tu viens de réussir tout juste : l’item reste possible, mais un peu moins pressant tout de suite, pour éviter de
+            tu viens de réussir tout juste : l'item reste possible, mais un peu moins pressant tout de suite, pour éviter de
             tourner sur les mêmes victoires fraîches.
           </p>
         </div>
@@ -81,7 +82,7 @@ export function SmartModeExplainer({ variant, revealKey = 0, preview }: SmartMod
           <ul className="list-disc space-y-1 pl-5 leading-relaxed">
             <li>
               <strong className="font-semibold text-slate-700">Session courte :</strong> tirage pondéré parmi ton pool :
-              les items à forte priorité ont plus de chances d’être dans la série ; la liste finale est ensuite mélangée.
+              les items à forte priorité ont plus de chances d'être dans la série ; la liste finale est ensuite mélangée.
             </li>
             <li>
               <strong className="font-semibold text-slate-700">« Tout » :</strong> une fois chaque question du pool :
@@ -91,11 +92,11 @@ export function SmartModeExplainer({ variant, revealKey = 0, preview }: SmartMod
         </div>
         <p className="text-xs text-slate-500 border-t border-slate-200/80 pt-3 leading-relaxed">
           <strong className="text-slate-600">Historique pris en compte :</strong>{' '}
-          {isGerman
+          {isVocab
             ? 'uniquement les essais pour le même type de jeu (flashcards, audio ou frappe), car chaque mode répond à tes réponses différemment.'
             : 'uniquement les essais du même mode (carte, audio ou frappe), pour rester cohérent avec ce que tu pratiques.'}{' '}
           <strong className="text-slate-600">Mode intelligent désactivé :</strong> choix aléatoire dans ton pool, sans
-          regarder l’historique pour le tirage (les résultats continuent d’être enregistrés).
+          regarder l'historique pour le tirage (les résultats continuent d'être enregistrés).
         </p>
         {preview}
       </div>

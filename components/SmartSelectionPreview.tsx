@@ -9,7 +9,7 @@ type TablesPreviewRow = {
   answer: number
   weight: number | null
   bullets: string[]
-  /** Mécanisme : pourquoi cette question tombe dans l’exemple de série */
+  /** Mécanisme : pourquoi cette question tombe dans l'exemple de série */
   whyPicked?: string[]
 }
 
@@ -19,6 +19,17 @@ type GermanPreviewRow = {
   unit_title: string
   french: string
   german: string
+  weight: number | null
+  bullets: string[]
+  whyPicked?: string[]
+}
+
+type EnglishPreviewRow = {
+  id: number
+  unit: number
+  unit_title: string
+  french: string
+  english: string
   weight: number | null
   bullets: string[]
   whyPicked?: string[]
@@ -45,6 +56,16 @@ type PreviewPayload =
       exampleDraw: GermanPreviewRow[]
       note: string
     }
+  | {
+      smart: boolean
+      hasUser: boolean
+      poolSize: number
+      sessionSize: number
+      modeFilter: string
+      topRanked: EnglishPreviewRow[]
+      exampleDraw: EnglishPreviewRow[]
+      note: string
+    }
 
 type Props =
   | {
@@ -57,6 +78,14 @@ type Props =
     }
   | {
       variant: 'german'
+      userId: string
+      units: number[]
+      mode: 'flashcard' | 'audio' | 'typing' | null
+      count: 10 | 20 | 'all'
+      smart: boolean
+    }
+  | {
+      variant: 'english'
       userId: string
       units: number[]
       mode: 'flashcard' | 'audio' | 'typing' | null
@@ -80,25 +109,29 @@ export function SmartSelectionPreview(props: Props) {
   const [error, setError] = useState('')
 
   const tablesBlocked = props.variant === 'tables' && props.tables.length === 0
-  const unitsBlocked = props.variant === 'german' && props.units.length === 0
+  const unitsBlocked = (props.variant === 'german' || props.variant === 'english') && props.units.length === 0
 
   const load = useCallback(async () => {
     setError('')
     setLoading(true)
     setData(null)
     try {
-      if (props.variant === 'german' && props.units.length === 0) {
+      if ((props.variant === 'german' || props.variant === 'english') && props.units.length === 0) {
         setError('Coche au moins une unité pour cet aperçu.')
         setLoading(false)
         return
       }
-      if (props.variant === 'german' && !props.mode) {
-        setError('Choisis d’abord un mode (étape 3) : l’aperçu utilise le même mode que la session.')
+      if ((props.variant === 'german' || props.variant === 'english') && !props.mode) {
+        setError("Choisis d'abord un mode (étape 3) : l'aperçu utilise le même mode que la session.")
         setLoading(false)
         return
       }
       const uid = parseInt(props.userId, 10)
-      const url = props.variant === 'tables' ? '/api/tables/preview' : '/api/quiz/preview'
+      const url = props.variant === 'tables'
+        ? '/api/tables/preview'
+        : props.variant === 'english'
+          ? '/api/english/preview'
+          : '/api/quiz/preview'
       const body =
         props.variant === 'tables'
           ? {
@@ -133,7 +166,7 @@ export function SmartSelectionPreview(props: Props) {
     }
   }, [props])
 
-  const germanBlocked = props.variant === 'german' && !props.mode
+  const germanBlocked = (props.variant === 'german' || props.variant === 'english') && !props.mode
 
   return (
     <div className="mt-5 rounded-xl border border-dashed border-slate-300 bg-white/60 p-4">
@@ -141,7 +174,7 @@ export function SmartSelectionPreview(props: Props) {
         <div>
           <p className="text-sm font-bold text-slate-800">Aperçu concret pour ta sélection</p>
           <p className="text-xs text-slate-500 mt-0.5">
-            Données réelles issues de tes fichiers d’historique (même logique que le bouton Commencer).
+            Données réelles issues de tes fichiers d'historique (même logique que le bouton Commencer).
           </p>
         </div>
         <button
@@ -156,7 +189,7 @@ export function SmartSelectionPreview(props: Props) {
       {unitsBlocked && <p className="text-xs text-amber-700 mt-3">Coche au moins une unité.</p>}
       {tablesBlocked && <p className="text-xs text-amber-700 mt-3">Choisis au moins une table.</p>}
       {germanBlocked && !unitsBlocked && (
-        <p className="text-xs text-amber-700 mt-3">Sélectionne un mode d’abord pour aligner l’historique.</p>
+        <p className="text-xs text-amber-700 mt-3">Sélectionne un mode d'abord pour aligner l'historique.</p>
       )}
       {error && <p className="text-xs text-rose-600 mt-3">{error}</p>}
 
@@ -185,6 +218,17 @@ export function SmartSelectionPreview(props: Props) {
                           · score ≈ {row.weight?.toFixed(1)}
                         </span>
                       </p>
+                    ) : props.variant === 'english' ? (
+                      <div>
+                        <p className="text-sm font-semibold text-slate-900">
+                          {(row as EnglishPreviewRow).english}
+                          <span className="ml-2 text-xs font-normal text-slate-500">
+                            (unité {(row as EnglishPreviewRow).unit})
+                          </span>
+                        </p>
+                        <p className="text-xs text-slate-500">{(row as EnglishPreviewRow).french}</p>
+                        <p className="text-xs font-semibold text-slate-500 mt-0.5">score ≈ {row.weight?.toFixed(1)}</p>
+                      </div>
                     ) : (
                       <div>
                         <p className="text-sm font-semibold text-slate-900">
@@ -217,6 +261,11 @@ export function SmartSelectionPreview(props: Props) {
                       <p className="font-mono text-base font-bold text-primary">
                         {(row as TablesPreviewRow).left} × {(row as TablesPreviewRow).right} = ?
                       </p>
+                    ) : props.variant === 'english' ? (
+                      <div>
+                        <p className="text-sm text-slate-600">{(row as EnglishPreviewRow).french}</p>
+                        <p className="text-xs text-slate-400">cible : {(row as EnglishPreviewRow).english}</p>
+                      </div>
                     ) : (
                       <div>
                         <p className="text-sm text-slate-600">{(row as GermanPreviewRow).french}</p>

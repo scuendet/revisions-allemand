@@ -86,7 +86,7 @@ export async function mirrorRedemptionsIntoLedger(userId: number): Promise<void>
 }
 
 type TimelineEv =
-  | { t: string; sort: number; vocabCorrect: boolean }
+  | { t: string; sort: number; vocabCorrect: boolean; subject?: 'german' | 'english' }
   | { t: string; sort: number; verbPts: number }
   | { t: string; sort: number; tableCorrect: boolean }
   | { t: string; sort: number; bonus: number }
@@ -98,6 +98,7 @@ type TimelineEv =
  */
 export async function recomputePracticeEarnLedger(userId: number): Promise<void> {
   const vocabResults = await readJson<VocabPracticeResult[]>(`results-${userId}.json`, [])
+  const englishResults = await readJson<VocabPracticeResult[]>(`english-results-${userId}.json`, [])
   const verbResults = await readJson<VerbPracticeResult[]>(`verb-results-${userId}.json`, [])
   const tableResults = await readJson<TablePracticeResult[]>(`tables-results-${userId}.json`, [])
   const sessions = await readJson<TableSessionStored[]>(`tables-sessions-${userId}.json`, [])
@@ -112,6 +113,12 @@ export async function recomputePracticeEarnLedger(userId: number): Promise<void>
           vocabCorrect: r.correct === 1,
         }) satisfies TimelineEv,
     ),
+    ...englishResults.map(r => ({
+      t: r.attempted_at,
+      sort: 0,
+      vocabCorrect: r.correct === 1,
+      subject: 'english' as const,
+    })),
     ...verbResults.map(
       r =>
         ({
@@ -174,7 +181,7 @@ export async function recomputePracticeEarnLedger(userId: number): Promise<void>
     let detail = ''
     if ('vocabCorrect' in e) {
       if (e.vocabCorrect) germanVocabPts += 1
-      headline = 'Allemand — vocabulaire'
+      headline = e.subject === 'english' ? 'Anglais — vocabulaire' : 'Allemand — vocabulaire'
       detail = e.vocabCorrect ? 'Bonne réponse (+1 pt)' : ''
     } else if ('verbPts' in e) {
       const p = Number.isFinite(e.verbPts) ? Math.max(0, Math.floor(e.verbPts)) : 0

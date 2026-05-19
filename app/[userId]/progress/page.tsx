@@ -23,6 +23,23 @@ interface WordStat {
   last_attempted: string | null
 }
 
+interface EnglishWordStat {
+  vocab_id: number
+  french: string
+  english: string
+  unit: number
+  unit_title: string
+  total_attempts: number
+  correct_attempts: number
+  flashcard_attempts: number
+  flashcard_correct: number
+  audio_attempts: number
+  audio_correct: number
+  typing_attempts: number
+  typing_correct: number
+  last_attempted: string | null
+}
+
 interface UnitTime {
   unit: number
   total_seconds: number
@@ -165,7 +182,7 @@ function fmtTime(seconds: number): string {
   return `${s}s`
 }
 
-const BRANCHES = ['global', 'allemand', 'math', 'français'] as const
+const BRANCHES = ['global', 'allemand', 'english', 'math', 'français'] as const
 type Branch = (typeof BRANCHES)[number]
 
 export default function ProgressPage() {
@@ -186,6 +203,7 @@ export default function ProgressPage() {
   const [unitTimes, setUnitTimes] = useState<UnitTime[]>([])
   const [math, setMath] = useState<MathProgress | null>(null)
   const [french, setFrench] = useState<FrenchDashboardPayload | null>(null)
+  const [englishWords, setEnglishWords] = useState<EnglishWordStat[]>([])
   const [loading, setLoading] = useState(true)
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [detailUnit, setDetailUnit] = useState<number | 'all'>('all')
@@ -199,12 +217,14 @@ export default function ProgressPage() {
       fetch(`/api/progress/${userId}/time`).then(r => r.json()),
       fetch(`/api/math/progress/${userId}`).then(r => r.json()),
       fetch(`/api/french/dashboard/${userId}`).then(r => r.ok ? r.json() : null),
-    ]).then(([w, v, t, m, fr]) => {
+      fetch(`/api/english/progress/${userId}`).then(r => r.ok ? r.json() : null),
+    ]).then(([w, v, t, m, fr, en]) => {
       setWords(w.detail ?? [])
       setVerbs(v.detail ?? [])
       setUnitTimes(t)
       setMath(m)
       setFrench(fr?.detail ?? null)
+      setEnglishWords(en?.detail ?? [])
       setLoading(false)
     })
   }, [userId])
@@ -344,6 +364,12 @@ export default function ProgressPage() {
             Allemand
           </button>
           <button
+            onClick={() => setBranch('english')}
+            className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition-colors ${branch === 'english' ? 'bg-emerald-600 text-white' : 'text-gray-500 hover:text-emerald-600'}`}
+          >
+            Anglais
+          </button>
+          <button
             onClick={() => setBranch('math')}
             className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition-colors ${branch === 'math' ? 'bg-primary text-white' : 'text-gray-500 hover:text-primary'}`}
           >
@@ -384,6 +410,41 @@ export default function ProgressPage() {
               <button
                 onClick={() => setBranch('allemand')}
                 className="inline-flex rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-primary-light transition-colors"
+              >
+                Voir les détails →
+              </button>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 mb-5">
+            <div className="flex-1 h-px bg-gray-200" />
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">🇬🇧 Anglais</span>
+            <div className="flex-1 h-px bg-gray-200" />
+          </div>
+          <div className="mb-6 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-extrabold text-primary text-lg">Vocabulaire anglais</h2>
+            <div className="mt-3 grid grid-cols-3 gap-4 text-center">
+              <div>
+                <p className="text-2xl font-extrabold text-emerald-500">
+                  {(() => { const total = englishWords.length; const mastered = englishWords.filter(w => w.total_attempts > 0 && w.correct_attempts / w.total_attempts >= 0.7).length; return <>{mastered}<span className="text-sm font-semibold text-gray-400">/{total}</span></> })()}
+                </p>
+                <p className="text-xs text-gray-400 mt-0.5">Mots maîtrisés</p>
+              </div>
+              <div>
+                <p className="text-2xl font-extrabold text-primary">
+                  {(() => { const att = englishWords.reduce((s, w) => s + w.total_attempts, 0); const cor = englishWords.reduce((s, w) => s + w.correct_attempts, 0); return att > 0 ? Math.round((cor / att) * 100) + '%' : '—' })()}
+                </p>
+                <p className="text-xs text-gray-400 mt-0.5">Taux de réussite</p>
+              </div>
+              <div>
+                <p className="text-2xl font-extrabold text-primary">{englishWords.filter(w => w.total_attempts > 0).length}</p>
+                <p className="text-xs text-gray-400 mt-0.5">Mots tentés</p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <button
+                onClick={() => setBranch('english')}
+                className="inline-flex rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-emerald-700 transition-colors"
               >
                 Voir les détails →
               </button>
@@ -454,6 +515,137 @@ export default function ProgressPage() {
             </div>
           </div>
         )}
+
+        {/* ── English tab: full stats ── */}
+        {branch === 'english' && (() => {
+          const enTotal = englishWords.length
+          const enMastered = englishWords.filter(w => w.total_attempts > 0 && w.correct_attempts / w.total_attempts >= 0.7).length
+          const enToReview = englishWords.filter(w => w.total_attempts > 0 && w.correct_attempts / w.total_attempts < 0.5).length
+          const enNeverTried = englishWords.filter(w => w.total_attempts === 0).length
+          const enAttempts = englishWords.reduce((s, w) => s + w.total_attempts, 0)
+          const enCorrect = englishWords.reduce((s, w) => s + w.correct_attempts, 0)
+          const enUnits = Array.from(new Set(englishWords.map(w => w.unit))).sort((a, b) => a - b)
+          const enByUnit = new Map<number, EnglishWordStat[]>()
+          for (const w of englishWords) {
+            if (!enByUnit.has(w.unit)) enByUnit.set(w.unit, [])
+            enByUnit.get(w.unit)!.push(w)
+          }
+          return (
+            <>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+                  <p className="text-3xl font-extrabold text-emerald-500">{enMastered}</p>
+                  <p className="text-xs font-semibold text-gray-400 mt-0.5">Mots maîtrisés</p>
+                  <p className="text-xs text-gray-300 mt-0.5">sur {enTotal}</p>
+                </div>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+                  <p className="text-3xl font-extrabold text-rose-400">{enToReview}</p>
+                  <p className="text-xs font-semibold text-gray-400 mt-0.5">À revoir</p>
+                  <p className="text-xs text-gray-300 mt-0.5">{enNeverTried} jamais tentés</p>
+                </div>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+                  <p className="text-3xl font-extrabold text-primary">
+                    {enAttempts > 0 ? Math.round((enCorrect / enAttempts) * 100) + '%' : '—'}
+                  </p>
+                  <p className="text-xs font-semibold text-gray-400 mt-0.5">Taux anglais</p>
+                  <p className="text-xs text-gray-300 mt-0.5">{enAttempts} essais</p>
+                </div>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+                  <p className="text-3xl font-extrabold text-primary">{englishWords.filter(w => w.total_attempts > 0).length}</p>
+                  <p className="text-xs font-semibold text-gray-400 mt-0.5">Mots tentés</p>
+                  <p className="text-xs text-gray-300 mt-0.5">sur {enTotal}</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="font-extrabold text-primary text-lg">Vocabulaire par unité</h2>
+                  <div className="flex items-center gap-2 flex-wrap justify-end">
+                    {legend.map(l => (
+                      <div key={l.label} className="flex items-center gap-1">
+                        <div className={`w-3 h-3 rounded-sm ${l.color}`} />
+                        <span className="text-xs text-gray-400">{l.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="space-y-5">
+                  {enUnits.map(unit => {
+                    const unitWords = enByUnit.get(unit) ?? []
+                    const unitMastered = unitWords.filter(w => w.total_attempts > 0 && w.correct_attempts / w.total_attempts >= 0.7).length
+                    const unitTitle = unitWords[0]?.unit_title ?? ''
+                    return (
+                      <div key={unit}>
+                        <div className="flex items-baseline gap-2 mb-2">
+                          <span className="text-xs font-bold text-primary uppercase tracking-wide">Unité {unit}</span>
+                          <span className="text-xs text-gray-400 truncate">{unitTitle}</span>
+                          <span className="ml-auto text-xs text-gray-400">{unitMastered}/{unitWords.length} maîtrisés</span>
+                        </div>
+                        <div className="w-full h-1.5 bg-gray-100 rounded-full mb-2 overflow-hidden">
+                          <div className="h-full bg-emerald-400 rounded-full transition-all" style={{ width: `${unitWords.length > 0 ? (unitMastered / unitWords.length) * 100 : 0}%` }} />
+                        </div>
+                        <UnitVocabPractice userId={userId} unit={unit} subject="english" />
+                        <div className="flex flex-wrap gap-1.5 mt-1.5">
+                          {unitWords.map(w => (
+                            <div
+                              key={w.vocab_id}
+                              className={`w-7 h-7 rounded-md cursor-default transition-transform hover:scale-125 hover:z-10 relative ${wordColor(w.total_attempts, w.correct_attempts)}`}
+                              title={`${w.french} → ${w.english}`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden mb-8">
+                <div className="p-4 border-b border-gray-100">
+                  <h2 className="font-extrabold text-primary text-base">Détail des mots anglais</h2>
+                </div>
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-gray-100 bg-gray-50">
+                      <th className="text-left px-4 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Français</th>
+                      <th className="text-left px-4 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Anglais</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">🃏</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">🔊</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">✍️</th>
+                      <th className="text-center px-3 py-2 font-semibold text-gray-400 text-xs uppercase tracking-wide">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {englishWords.map(stat => {
+                      const rate = stat.total_attempts > 0 ? stat.correct_attempts / stat.total_attempts : null
+                      const bg = stat.total_attempts === 0 ? '' : rate! >= 0.7 ? 'bg-emerald-50' : rate! < 0.5 ? 'bg-rose-50' : 'bg-amber-50'
+                      const modeCell = (correct: number, total: number) => {
+                        if (total === 0) return <span className="text-gray-300">—</span>
+                        const r = correct / total
+                        const cls = r >= 0.7 ? 'text-emerald-500' : r < 0.5 ? 'text-rose-400' : 'text-amber-500'
+                        return <span className={`font-bold ${cls}`}>{Math.round(r * 100)}%</span>
+                      }
+                      return (
+                        <tr key={stat.vocab_id} className={`border-b border-gray-50 last:border-0 ${bg}`}>
+                          <td className="px-4 py-2.5 text-gray-600 text-xs">{stat.french}</td>
+                          <td className="px-4 py-2.5 font-semibold text-primary text-xs">{stat.english}</td>
+                          <td className="px-3 py-2.5 text-center text-xs">{modeCell(stat.flashcard_correct, stat.flashcard_attempts)}</td>
+                          <td className="px-3 py-2.5 text-center text-xs">{modeCell(stat.audio_correct, stat.audio_attempts)}</td>
+                          <td className="px-3 py-2.5 text-center text-xs">{modeCell(stat.typing_correct, stat.typing_attempts)}</td>
+                          <td className="px-3 py-2.5 text-center font-bold text-xs">
+                            <span className={rate === null ? 'text-gray-300' : rate >= 0.7 ? 'text-emerald-500' : rate < 0.5 ? 'text-rose-400' : 'text-amber-500'}>
+                              {pct(stat.correct_attempts, stat.total_attempts)}
+                            </span>
+                          </td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )
+        })()}
 
         {/* ── Math tab: full stats ── */}
         {branch === 'math' && (

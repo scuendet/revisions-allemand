@@ -17,6 +17,7 @@ interface UnitVocabPracticeProps {
   /** Text before the mode buttons */
   label?: boolean
   compact?: boolean
+  subject?: 'german' | 'english'
 }
 
 export function UnitVocabPractice({
@@ -25,6 +26,7 @@ export function UnitVocabPractice({
   count = 10,
   label = true,
   compact = false,
+  subject = 'german',
 }: UnitVocabPracticeProps) {
   const router = useRouter()
 
@@ -34,7 +36,8 @@ export function UnitVocabPractice({
       mode,
       count: String(count),
     })
-    router.push(`/${userId}/quiz?${params}`)
+    const path = subject === 'english' ? `/${userId}/english/quiz` : `/${userId}/quiz`
+    router.push(`${path}?${params}`)
   }
 
   return (
