@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
-import { useParams } from 'next/navigation'
+import { useParams, useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { UnitVocabPractice } from '@/components/UnitVocabPractice'
 
@@ -103,9 +103,21 @@ function fmtTime(seconds: number): string {
   return `${s}s`
 }
 
+const BRANCHES = ['global', 'allemand', 'math', 'français'] as const
+type Branch = (typeof BRANCHES)[number]
+
 export default function ProgressPage() {
   const params = useParams()
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const userId = params.userId as string
+
+  const rawBranch = searchParams.get('branch') ?? 'global'
+  const branch: Branch = (BRANCHES as readonly string[]).includes(rawBranch) ? rawBranch as Branch : 'global'
+
+  function setBranch(b: Branch) {
+    router.push(`/${userId}/progress?branch=${b}`)
+  }
 
   const [words, setWords] = useState<WordStat[]>([])
   const [verbs, setVerbs] = useState<VerbStat[]>([])
@@ -114,7 +126,6 @@ export default function ProgressPage() {
   const [loading, setLoading] = useState(true)
   const [tooltip, setTooltip] = useState<Tooltip | null>(null)
   const [detailUnit, setDetailUnit] = useState<number | 'all'>('all')
-  const [branch, setBranch] = useState<'global' | 'allemand' | 'math' | 'français'>('global')
   const tooltipRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
