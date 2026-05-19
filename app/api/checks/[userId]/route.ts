@@ -11,26 +11,32 @@ export async function GET(
     return NextResponse.json({ error: 'Invalid user id' }, { status: 400 })
   }
 
-  const totals = await aggregatePracticeTotals(userId)
-  const redemptionsRaw = await readRedemptions(userId)
-  const usedChecks = redemptionsRaw.reduce((sum, r) => sum + r.checks_used, 0)
-  const earnedChecks = Math.floor(totals.totalPoints / POINTS_PER_CHECK)
-  const availableChecks = Math.max(earnedChecks - usedChecks, 0)
-  const remainderPoints = totals.totalPoints % POINTS_PER_CHECK
+  try {
+    const totals = await aggregatePracticeTotals(userId)
+    const redemptionsRaw = await readRedemptions(userId)
+    const usedChecks = redemptionsRaw.reduce((sum, r) => sum + r.checks_used, 0)
+    const earnedChecks = Math.floor(totals.totalPoints / POINTS_PER_CHECK)
+    const availableChecks = Math.max(earnedChecks - usedChecks, 0)
+    const remainderPoints = totals.totalPoints % POINTS_PER_CHECK
 
-  const redemptions = [...redemptionsRaw].sort((a, b) => b.created_at.localeCompare(a.created_at))
+    const redemptions = [...redemptionsRaw].sort((a, b) => b.created_at.localeCompare(a.created_at))
 
-  const ledger = await sortedLedgerDesc(userId)
+    const ledger = await sortedLedgerDesc(userId)
 
-  return NextResponse.json({
-    pointsPerCheck: POINTS_PER_CHECK,
-    mathCorrectsPerPoint: MATH_CORRECTS_PER_POINT,
-    ...totals,
-    earnedChecks,
-    usedChecks,
-    availableChecks,
-    remainderPoints,
-    redemptions,
-    ledger,
-  })
+    return NextResponse.json({
+      pointsPerCheck: POINTS_PER_CHECK,
+      mathCorrectsPerPoint: MATH_CORRECTS_PER_POINT,
+      ...totals,
+      earnedChecks,
+      usedChecks,
+      availableChecks,
+      remainderPoints,
+      redemptions,
+      ledger,
+    })
+  } catch (err) {
+    console.error('[checks GET]', err)
+    const message = err instanceof Error ? err.message : String(err)
+    return NextResponse.json({ error: message }, { status: 500 })
+  }
 }

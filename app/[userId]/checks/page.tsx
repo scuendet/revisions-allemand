@@ -85,13 +85,13 @@ export default function ChecksPage() {
     fetch(`/api/checks/${userId}`)
       .then(async r => {
         const j = await r.json().catch(() => null)
-        if (!r.ok) {
-          setLoadError(typeof j?.error === 'string' ? j.error : 'Impossible de charger la banque.')
+        if (!r.ok || j === null) {
+          setLoadError(typeof j?.error === 'string' ? j.error : `Impossible de charger la banque. (${r.status})`)
           return
         }
         setData(j as ChecksPayload)
       })
-      .catch(() => setLoadError('Erreur réseau.'))
+      .catch(err => setLoadError(`Erreur réseau : ${err instanceof Error ? err.message : String(err)}`))
   }, [userId])
 
   useEffect(() => {
