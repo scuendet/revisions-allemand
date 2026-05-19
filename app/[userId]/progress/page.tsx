@@ -281,26 +281,11 @@ export default function ProgressPage() {
           </button>
         </div>
 
-        {branch === 'français' && (
-          <div className="mb-8 rounded-2xl border border-rose-100 bg-white p-6 shadow-sm">
-            <h2 className="font-extrabold text-primary text-lg">Conjugaison française</h2>
-            <p className="mt-2 text-sm text-gray-500">
-              Carte verbes × temps, stats par jour, sessions et lien vers une nouvelle série.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <Link
-                href={`/${userId}/french/dashboard`}
-                className="inline-flex rounded-xl bg-rose-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-rose-700 transition-colors"
-              >
-                Ouvrir le dashboard →
-              </Link>
-              <Link
-                href={`/${userId}/french`}
-                className="inline-flex rounded-xl border-2 border-rose-200 px-5 py-2.5 text-sm font-bold text-rose-800 hover:bg-rose-50 transition-colors"
-              >
-                Configurer une série →
-              </Link>
-            </div>
+        {branch === 'global' && (
+          <div className="flex items-center gap-3 mb-5">
+            <div className="flex-1 h-px bg-gray-200" />
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">🇩🇪 Allemand</span>
+            <div className="flex-1 h-px bg-gray-200" />
           </div>
         )}
 
@@ -333,6 +318,14 @@ export default function ProgressPage() {
               <p className="text-xs font-semibold text-gray-400 mt-0.5">Temps allemand</p>
               <p className="text-xs text-gray-300 mt-0.5">révision</p>
             </div>
+          </div>
+        )}
+
+        {branch === 'global' && (
+          <div className="flex items-center gap-3 mb-5">
+            <div className="flex-1 h-px bg-gray-200" />
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">➗ Mathématiques</span>
+            <div className="flex-1 h-px bg-gray-200" />
           </div>
         )}
 
@@ -613,6 +606,37 @@ export default function ProgressPage() {
                   </tbody>
                 </table>
               </div>
+            </div>
+          </div>
+        )}
+
+        {branch === 'global' && (
+          <div className="flex items-center gap-3 mt-8 mb-5">
+            <div className="flex-1 h-px bg-gray-200" />
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">🇫🇷 Français</span>
+            <div className="flex-1 h-px bg-gray-200" />
+          </div>
+        )}
+
+        {(branch === 'global' || branch === 'français') && (
+          <div className="mb-8 rounded-2xl border border-rose-100 bg-white p-6 shadow-sm">
+            <h2 className="font-extrabold text-primary text-lg">Conjugaison française</h2>
+            <p className="mt-2 text-sm text-gray-500">
+              Carte verbes × temps, stats par jour, sessions et lien vers une nouvelle série.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href={`/${userId}/french/dashboard`}
+                className="inline-flex rounded-xl bg-rose-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-rose-700 transition-colors"
+              >
+                Ouvrir le dashboard →
+              </Link>
+              <Link
+                href={`/${userId}/french`}
+                className="inline-flex rounded-xl border-2 border-rose-200 px-5 py-2.5 text-sm font-bold text-rose-800 hover:bg-rose-50 transition-colors"
+              >
+                Configurer une série →
+              </Link>
             </div>
           </div>
         )}

@@ -106,7 +106,7 @@ function formatLastActivity(iso: string | null): { line: string; detail: string 
   if (days === 0) line = "Aujourd'hui"
   else if (days === 1) line = 'Hier'
   else if (days >= 2 && days < 7) line = `Il y a ${days} jours`
-  else if (days < 21) line = `Il y a ${Math.round(days / 7)} semaines`
+  else if (days < 21) { const w = Math.round(days / 7); line = `Il y a ${w} semaine${w > 1 ? 's' : ''}` }
   else line = `Il y a ${Math.round(days / 30)} mois`
 
   const detail = d.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' })
