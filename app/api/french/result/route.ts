@@ -8,10 +8,10 @@ interface FrenchResult {
   pronoun: string
   correct_answer: string
   answer_given?: string
-  is_correct: boolean
+  correct: number
   mode: string
   session_id?: number
-  asked_at: string
+  attempted_at: string
 }
 
 export async function POST(req: NextRequest) {
@@ -26,10 +26,10 @@ export async function POST(req: NextRequest) {
     pronoun,
     correct_answer,
     answer_given: answer_given ?? undefined,
-    is_correct: Boolean(is_correct),
+    correct: is_correct ? 1 : 0,
     mode: 'web_app',
     session_id: session_id ?? undefined,
-    asked_at: new Date().toISOString(),
+    attempted_at: new Date().toISOString(),
   }
   await writeJson(`french-results-${user_id}.json`, [...results, entry])
 

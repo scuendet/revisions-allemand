@@ -48,6 +48,7 @@ export default function VerbsPage() {
   const [focusedField, setFocusedField] = useState(0)
 
   const inputRefs = useRef<(HTMLInputElement | null)[]>([])
+  const startTimeRef = useRef<number | null>(null)
 
   function startSession() {
     setLoading(true)
@@ -64,6 +65,7 @@ export default function VerbsPage() {
         setAnswers({ ich: '', du: '', er: '', wir: '', ihr: '', sie: '' })
         setSubmitted(false)
         setSessionResults([])
+        startTimeRef.current = Date.now()
         setPhase('quiz')
         setLoading(false)
       })
@@ -126,6 +128,12 @@ export default function VerbsPage() {
 
   function advance() {
     if (currentIndex + 1 >= verbs.length) {
+      const duration = startTimeRef.current ? Math.round((Date.now() - startTimeRef.current) / 1000) : 0
+      fetch('/api/verbs/session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: parseInt(userId), verb_count: verbs.length, duration_seconds: duration }),
+      }).catch(() => {})
       setPhase('done')
     } else {
       setCurrentIndex(i => i + 1)

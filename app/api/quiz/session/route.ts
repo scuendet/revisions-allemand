@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { readJson, writeJson, nextId } from '@/lib/store'
+import { recomputePracticeEarnLedger } from '@/lib/checkLedger'
 
 interface QuizSession {
   id: number
@@ -20,5 +21,6 @@ export async function POST(req: NextRequest) {
     completed_at: new Date().toISOString(),
   }
   await writeJson(`quiz-sessions-${user_id}.json`, [...sessions, entry])
+  await recomputePracticeEarnLedger(Number(user_id))
   return NextResponse.json({ ok: true })
 }

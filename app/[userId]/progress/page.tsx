@@ -111,13 +111,13 @@ function MiniBars({ label, rows }: { label: string; rows: { label: string; corre
 interface MathProgress {
   summary: {
     total_attempts: number
-    total_correct: number
+    correct_attempts: number
     total_seconds: number
     timer_attempts: number
     timer_correct: number
-    sessions: number
+    total_sessions: number
   }
-  by_table: Array<{
+  detail: Array<{
     table: number
     attempts: number
     correct: number
@@ -200,11 +200,11 @@ export default function ProgressPage() {
       fetch(`/api/math/progress/${userId}`).then(r => r.json()),
       fetch(`/api/french/dashboard/${userId}`).then(r => r.ok ? r.json() : null),
     ]).then(([w, v, t, m, fr]) => {
-      setWords(w)
-      setVerbs(v)
+      setWords(w.detail ?? [])
+      setVerbs(v.detail ?? [])
       setUnitTimes(t)
       setMath(m)
-      setFrench(fr)
+      setFrench(fr?.detail ?? null)
       setLoading(false)
     })
   }, [userId])
@@ -225,9 +225,9 @@ export default function ProgressPage() {
   const totalSeconds = unitTimes.reduce((s, t) => s + t.total_seconds, 0)
   const timeByUnit = new Map(unitTimes.map(t => [t.unit, t]))
   const mathAttempts = math?.summary.total_attempts ?? 0
-  const mathCorrect = math?.summary.total_correct ?? 0
+  const mathCorrect = math?.summary.correct_attempts ?? 0
   const mathSeconds = math?.summary.total_seconds ?? 0
-  const mathSessions = math?.summary.sessions ?? 0
+  const mathSessions = math?.summary.total_sessions ?? 0
   const globalSeconds = totalSeconds + mathSeconds
 
   // Group words by unit
@@ -660,7 +660,7 @@ export default function ProgressPage() {
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mt-4">
             <h2 className="font-extrabold text-primary text-lg mb-4">Math — tables par série</h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-              {(math?.by_table ?? []).map(t => {
+              {(math?.detail ?? []).map(t => {
                 const rate = t.attempts > 0 ? t.correct / t.attempts : 0
                 const bg = t.attempts === 0
                   ? 'bg-gray-50 border-gray-200 text-gray-400'
@@ -698,7 +698,7 @@ export default function ProgressPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {(math?.by_table ?? []).map(t => {
+                    {(math?.detail ?? []).map(t => {
                       const rate = t.attempts > 0 ? t.correct / t.attempts : null
                       const timerRate = t.timer_attempts > 0 ? t.timer_correct / t.timer_attempts : null
                       const rowBg =

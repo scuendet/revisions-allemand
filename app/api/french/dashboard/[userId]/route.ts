@@ -6,6 +6,7 @@ import {
   type FrenchResultRow,
   type FrenchSessionRow,
 } from '@/lib/frenchDashboard'
+import type { SubjectProgressSummary } from '@/lib/subjectProgress'
 
 export async function GET(_req: Request, { params }: { params: { userId: string } }) {
   const uid = Number(params.userId)
@@ -20,5 +21,17 @@ export async function GET(_req: Request, { params }: { params: { userId: string 
   ])
 
   const payload = buildFrenchDashboardPayload(catalog, results, sessions)
-  return NextResponse.json(payload)
+
+  const summary: SubjectProgressSummary = {
+    total_attempts: results.length,
+    correct_attempts: results.filter(r => r.correct === 1).length,
+    total_sessions: sessions.filter(s => s.ended_at).length,
+    total_seconds: Math.round(sessions.reduce((s, fs) => {
+      if (!fs.ended_at || !fs.started_at) return s
+      return s + (new Date(fs.ended_at).getTime() - new Date(fs.started_at).getTime()) / 1000
+    }, 0)),
+    last_attempted: results.length > 0 ? results[results.length - 1].attempted_at : null,
+  }
+
+  return NextResponse.json({ summary, detail: payload })
 }

@@ -12,10 +12,10 @@ export interface FrenchResultRow {
   pronoun: string
   correct_answer: string
   answer_given?: string
-  is_correct: boolean
+  correct: number
   mode: string
   session_id?: number
-  asked_at: string
+  attempted_at: string
 }
 
 export interface FrenchSessionRow {
@@ -117,21 +117,22 @@ export function buildFrenchDashboardPayload(
   const latestByQuestion = new Map<string, { askedAt: string; isCorrect: boolean }>()
 
   for (const r of results) {
+    const isCorrect = r.correct === 1
     const gk = `${r.verb}|${r.tense}`
     const g = grouped.get(gk) || { attempts: 0, correct: 0 }
     g.attempts++
-    if (r.is_correct) g.correct++
+    if (isCorrect) g.correct++
     grouped.set(gk, g)
 
     const qid = qKey(r)
     const qs = questionStats.get(qid) || { attempts: 0, correct: 0 }
     qs.attempts++
-    if (r.is_correct) qs.correct++
+    if (isCorrect) qs.correct++
     questionStats.set(qid, qs)
 
     const prev = latestByQuestion.get(qid)
-    if (!prev || r.asked_at > prev.askedAt) {
-      latestByQuestion.set(qid, { askedAt: r.asked_at, isCorrect: r.is_correct })
+    if (!prev || r.attempted_at > prev.askedAt) {
+      latestByQuestion.set(qid, { askedAt: r.attempted_at, isCorrect })
     }
   }
 
@@ -177,14 +178,15 @@ export function buildFrenchDashboardPayload(
   const byVerbMap = new Map<string, { attempts: number; correct: number }>()
   const byTenseMap = new Map<string, { attempts: number; correct: number }>()
   for (const r of results) {
+    const isCorrect = r.correct === 1
     const vb = byVerbMap.get(r.verb) || { attempts: 0, correct: 0 }
     vb.attempts++
-    if (r.is_correct) vb.correct++
+    if (isCorrect) vb.correct++
     byVerbMap.set(r.verb, vb)
 
     const tn = byTenseMap.get(r.tense) || { attempts: 0, correct: 0 }
     tn.attempts++
-    if (r.is_correct) tn.correct++
+    if (isCorrect) tn.correct++
     byTenseMap.set(r.tense, tn)
   }
 
@@ -199,7 +201,7 @@ export function buildFrenchDashboardPayload(
       .sort((a, b) => a.key.localeCompare(b.key))
 
   const totalAttempts = results.length
-  const totalCorrect = results.filter(r => r.is_correct).length
+  const totalCorrect = results.filter(r => r.correct === 1).length
   const overallAccuracy = totalAttempts > 0 ? totalCorrect / totalAttempts : 0
 
   const totalPoints = sessions.reduce(
@@ -210,9 +212,9 @@ export function buildFrenchDashboardPayload(
 
   const dayMap = new Map<string, { correct: number; incorrect: number }>()
   for (const r of results) {
-    const d = r.asked_at.slice(0, 10)
+    const d = r.attempted_at.slice(0, 10)
     const cur = dayMap.get(d) || { correct: 0, incorrect: 0 }
-    if (r.is_correct) cur.correct++
+    if (r.correct === 1) cur.correct++
     else cur.incorrect++
     dayMap.set(d, cur)
   }
@@ -231,9 +233,9 @@ export function buildFrenchDashboardPayload(
 
   const weekMap = new Map<string, { correct: number; incorrect: number }>()
   for (const r of results) {
-    const wk = weekMonday(new Date(r.asked_at))
+    const wk = weekMonday(new Date(r.attempted_at))
     const cur = weekMap.get(wk) || { correct: 0, incorrect: 0 }
-    if (r.is_correct) cur.correct++
+    if (r.correct === 1) cur.correct++
     else cur.incorrect++
     weekMap.set(wk, cur)
   }
@@ -259,8 +261,8 @@ export function buildFrenchDashboardPayload(
         pronoun: r.pronoun,
         givenAnswer: r.answer_given ?? '',
         expectedAnswer: r.correct_answer,
-        isCorrect: r.is_correct,
-        askedAt: r.asked_at,
+        isCorrect: r.correct === 1,
+        askedAt: r.attempted_at,
       })),
   }))
 

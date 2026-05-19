@@ -11,8 +11,8 @@ interface FrenchResult {
   verb: string
   tense: string
   pronoun: string
-  is_correct: boolean
-  asked_at: string
+  correct: number
+  attempted_at: string
 }
 
 export async function GET(req: NextRequest) {
@@ -30,8 +30,8 @@ export async function GET(req: NextRequest) {
   for (const r of pastResults) {
     const k = `${r.verb}|${r.tense}|${r.pronoun}`
     const existing = latestByKey.get(k)
-    if (!existing || r.asked_at > existing.at) {
-      latestByKey.set(k, { correct: r.is_correct, at: r.asked_at })
+    if (!existing || r.attempted_at > existing.at) {
+      latestByKey.set(k, { correct: r.correct === 1, at: r.attempted_at })
     }
   }
 

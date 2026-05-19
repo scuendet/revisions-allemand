@@ -117,7 +117,7 @@ export async function recomputePracticeEarnLedger(userId: number): Promise<void>
         ({
           t: r.attempted_at,
           sort: 1,
-          verbPts: r.correct_count,
+          verbPts: Math.max(0, r.correct_count - 3),
         }) satisfies TimelineEv,
     ),
     ...tableResults.map(
