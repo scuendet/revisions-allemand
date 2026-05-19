@@ -23,7 +23,7 @@ export default function MathDashboardPage() {
               Chèques
             </Link>
             <Link
-              href={`/${userId}/progress`}
+              href={`/${userId}/progress?branch=math`}
               className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors"
             >
               Dashboard →

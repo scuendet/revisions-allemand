@@ -218,9 +218,6 @@ export default function SubjectSelectorPage() {
           : 'Pas encore de conjugaison jouée',
       ],
       barPct: frenchPct ?? (att > 0 ? Math.round((french!.totalCorrect / att) * 100) : 0),
-      extraLink: att > 0
-        ? { label: 'Carte conjugaisons', href: `/${userId}/french/dashboard` }
-        : undefined,
     }
   })
 

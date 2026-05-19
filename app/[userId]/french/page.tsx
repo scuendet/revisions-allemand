@@ -117,7 +117,7 @@ export default function FrenchHubPage() {
             <Link href={`/${userId}/checks`} className="text-sm font-semibold text-amber-800 border border-amber-300 rounded-xl px-4 py-2 bg-amber-50 hover:bg-amber-100 transition-colors">
               Chèques
             </Link>
-            <Link href={`/${userId}/progress`} className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors">
+            <Link href={`/${userId}/progress?branch=français`} className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors">
               Progrès →
             </Link>
           </div>
