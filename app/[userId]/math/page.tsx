@@ -10,18 +10,6 @@ export default function MathDashboardPage() {
   return (
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-xl mx-auto">
-        <div className="inline-flex rounded-xl border border-gray-200 bg-white p-1 mb-4">
-          <Link
-            href={`/${userId}/german`}
-            className="rounded-lg px-4 py-1.5 text-sm font-semibold text-gray-500 hover:text-primary transition-colors"
-          >
-            Allemand
-          </Link>
-          <span className="rounded-lg bg-primary px-4 py-1.5 text-sm font-bold text-white">
-            Math
-          </span>
-        </div>
-
         <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-3xl font-extrabold text-primary">Math</h1>
