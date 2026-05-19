@@ -20,7 +20,7 @@ export default function GermanHubPage() {
 
   const [units, setUnits] = useState<VocabUnit[]>([])
   const [selectedUnits, setSelectedUnits] = useState<number[]>([])
-  const [mode, setMode] = useState<'flashcard' | 'audio' | 'typing' | null>(null)
+  const [mode, setMode] = useState<'flashcard' | 'audio' | 'typing'>('typing')
   const [count, setCount] = useState<10 | 20 | 'all'>(10)
   const [smartMode, setSmartMode] = useState(true)
   const [smartExplainBump, setSmartExplainBump] = useState(0)
@@ -57,15 +57,15 @@ export default function GermanHubPage() {
     router.push(`/${userId}/quiz?${p.toString()}`)
   }
 
-  const canStart = mode !== null && selectedUnits.length > 0
+  const canStart = selectedUnits.length > 0
   const selectedWordCount = units
     .filter(u => selectedUnits.includes(u.unit))
     .reduce((sum, u) => sum + u.count, 0)
 
   const modes = [
+    { id: 'typing', emoji: '⌨️', label: 'Frappe', desc: 'Écris la réponse en allemand' },
     { id: 'flashcard', emoji: '🃏', label: 'Flashcards', desc: 'Retourne la carte et dis si tu savais' },
     { id: 'audio', emoji: '🎤', label: 'Audio', desc: 'Écoute et réponds à voix haute' },
-    { id: 'typing', emoji: '⌨️', label: 'Frappe', desc: 'Écris la réponse en allemand' },
   ] as const
 
   return (

@@ -45,9 +45,9 @@ export default function TablesSetupPage() {
 
   const modeCards = useMemo(
     () => [
+      { id: 'typing' as const, emoji: '⌨️', label: 'Frappe', desc: 'Écris le résultat' },
       { id: 'flashcard' as const, emoji: '🃏', label: 'Flashcards', desc: 'Retourne puis auto-évalue' },
       { id: 'audio' as const, emoji: '🎤', label: 'Audio', desc: 'Réponds en parlant' },
-      { id: 'typing' as const, emoji: '⌨️', label: 'Frappe', desc: 'Écris le résultat' },
     ],
     []
   )
