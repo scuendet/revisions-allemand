@@ -281,15 +281,73 @@ export default function ProgressPage() {
           </button>
         </div>
 
-        {branch === 'global' && (
+        {/* ── Global summary cards ── */}
+        {branch === 'global' && (<>
           <div className="flex items-center gap-3 mb-5">
             <div className="flex-1 h-px bg-gray-200" />
             <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">🇩🇪 Allemand</span>
             <div className="flex-1 h-px bg-gray-200" />
           </div>
-        )}
+          <div className="mb-6 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-extrabold text-primary text-lg">Vocabulaire &amp; Conjugaison</h2>
+            <div className="mt-3 grid grid-cols-3 gap-4 text-center">
+              <div>
+                <p className="text-2xl font-extrabold text-emerald-500">{mastered}<span className="text-sm font-semibold text-gray-400">/{totalWords}</span></p>
+                <p className="text-xs text-gray-400 mt-0.5">Mots maîtrisés</p>
+              </div>
+              <div>
+                <p className="text-2xl font-extrabold text-primary">{totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) + '%' : '—'}</p>
+                <p className="text-xs text-gray-400 mt-0.5">Taux de réussite</p>
+              </div>
+              <div>
+                <p className="text-2xl font-extrabold text-primary">{fmtTime(totalSeconds)}</p>
+                <p className="text-xs text-gray-400 mt-0.5">Temps de révision</p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <button
+                onClick={() => setBranch('allemand')}
+                className="inline-flex rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-primary-light transition-colors"
+              >
+                Voir les détails →
+              </button>
+            </div>
+          </div>
 
-        {(branch === 'global' || branch === 'allemand') && (
+          <div className="flex items-center gap-3 mb-5">
+            <div className="flex-1 h-px bg-gray-200" />
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">➗ Mathématiques</span>
+            <div className="flex-1 h-px bg-gray-200" />
+          </div>
+          <div className="mb-6 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-extrabold text-primary text-lg">Tables de multiplication</h2>
+            <div className="mt-3 grid grid-cols-3 gap-4 text-center">
+              <div>
+                <p className="text-2xl font-extrabold text-emerald-500">{mathAttempts > 0 ? Math.round((mathCorrect / mathAttempts) * 100) + '%' : '—'}</p>
+                <p className="text-xs text-gray-400 mt-0.5">Taux de réussite</p>
+              </div>
+              <div>
+                <p className="text-2xl font-extrabold text-accent">{mathSessions}</p>
+                <p className="text-xs text-gray-400 mt-0.5">Sessions complétées</p>
+              </div>
+              <div>
+                <p className="text-2xl font-extrabold text-primary">{fmtTime(mathSeconds)}</p>
+                <p className="text-xs text-gray-400 mt-0.5">Temps de révision</p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <button
+                onClick={() => setBranch('math')}
+                className="inline-flex rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-primary-light transition-colors"
+              >
+                Voir les détails →
+              </button>
+            </div>
+          </div>
+        </>)}
+
+        {/* ── Allemand tab: full stats ── */}
+        {branch === 'allemand' && (
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
               <p className="text-3xl font-extrabold text-emerald-500">{mastered}</p>
@@ -321,15 +379,8 @@ export default function ProgressPage() {
           </div>
         )}
 
-        {branch === 'global' && (
-          <div className="flex items-center gap-3 mb-5">
-            <div className="flex-1 h-px bg-gray-200" />
-            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">➗ Mathématiques</span>
-            <div className="flex-1 h-px bg-gray-200" />
-          </div>
-        )}
-
-        {(branch === 'global' || branch === 'math') && (
+        {/* ── Math tab: full stats ── */}
+        {branch === 'math' && (
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
               <p className="text-3xl font-extrabold text-primary">{mathAttempts}</p>
@@ -362,7 +413,7 @@ export default function ProgressPage() {
         )}
 
         {/* ── Vocabulary heatmap ── */}
-        {(branch === 'global' || branch === 'allemand') && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
+        {branch === 'allemand' && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-extrabold text-primary text-lg">Vocabulaire par unité</h2>
             {/* Legend */}
@@ -420,7 +471,7 @@ export default function ProgressPage() {
         </div>}
 
         {/* ── Verb heatmap ── */}
-        {(branch === 'global' || branch === 'allemand') && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-8">
+        {branch === 'allemand' && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-8">
           <h2 className="font-extrabold text-primary text-lg mb-4">Conjugaison des verbes</h2>
           <div className="space-y-5">
             {verbUnits.map(unit => {
@@ -459,7 +510,7 @@ export default function ProgressPage() {
         </div>}
 
         {/* ── Word detail table ── */}
-        {(branch === 'global' || branch === 'allemand') && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+        {branch === 'allemand' && <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           {detailUnit !== 'all' && (
             <div className="p-4 border-b border-gray-100 bg-accent/5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-sm font-semibold text-primary">
@@ -529,7 +580,7 @@ export default function ProgressPage() {
           </table>
         </div>}
 
-        {(branch === 'global' || branch === 'math') && (
+        {branch === 'math' && (
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mt-4">
             <h2 className="font-extrabold text-primary text-lg mb-4">Math — tables par série</h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
