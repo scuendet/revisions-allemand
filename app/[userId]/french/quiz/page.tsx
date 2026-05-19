@@ -259,32 +259,42 @@ export default function FrenchQuizPage() {
             <p className="text-gray-500 font-medium">
               {correctCount === questions.length ? 'Parfait !' : 'Continue comme ça !'}
             </p>
-            <p className="text-sm text-gray-400 mt-2">⏱ {formatTime(elapsed)}</p>
-            {finalPoints !== null && (
-              <p className="text-sm font-semibold text-emerald-600 mt-2">
-                +{finalPoints} point{finalPoints !== 1 ? 's' : ''} gagnés
-              </p>
-            )}
+            <p className="text-sm text-gray-400 mt-3">⏱ {formatTime(elapsed)}</p>
           </div>
+
+          {finalPoints !== null && (
+            <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-left">
+              <p className="text-xs font-bold uppercase tracking-wide text-amber-800 mb-2">Points (cette série)</p>
+              <ul className="space-y-1 text-sm text-amber-950">
+                <li>
+                  Règle conjugaison :{' '}
+                  <span className="font-semibold">
+                    {correctCount} bonne{correctCount !== 1 ? 's' : ''} réponse{correctCount !== 1 ? 's' : ''} · {finalPoints} pt{finalPoints !== 1 ? 's' : ''}
+                  </span>
+                </li>
+                <li className="pt-2 mt-2 border-t border-amber-200/80 font-extrabold text-lg text-primary">
+                  Total cette série : +{finalPoints} pt{finalPoints !== 1 ? 's' : ''}
+                </li>
+              </ul>
+            </div>
+          )}
 
           {missedItems.length > 0 && (
             <div className="bg-white rounded-2xl shadow-md p-6 mb-6">
               <h3 className="font-extrabold text-primary mb-3">À retravailler</h3>
               <div className="space-y-2">
                 {missedItems.map((r, i) => (
-                  <div key={i} className="text-sm p-3 rounded-xl bg-rose-50 border border-rose-100">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-bold text-rose-700">{r.verb}</span>
-                      <span className="text-gray-400">·</span>
-                      <span className="text-gray-600">{r.tense}</span>
-                      <span className="text-gray-400">·</span>
-                      <span className="text-gray-600">{r.pronoun}</span>
+                  <div key={i} className="text-sm p-2 rounded-lg bg-rose-50">
+                    <div className="flex items-center justify-between gap-2 flex-wrap">
+                      <span className="text-gray-600">
+                        <span className="font-semibold text-rose-700">{r.verb}</span>
+                        {' · '}{r.tense}{' · '}{r.pronoun}
+                      </span>
+                      <span className="font-semibold text-primary">{r.correct_answer}</span>
                     </div>
-                    <div className="mt-1 flex items-center gap-2">
-                      <span className="text-gray-500 line-through text-xs">{r.answer_given}</span>
-                      <span className="text-gray-400">→</span>
-                      <span className="font-bold text-primary">{r.correct_answer}</span>
-                    </div>
+                    {r.answer_given && (
+                      <p className="text-xs text-gray-400 mt-0.5 line-through">{r.answer_given}</p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -296,7 +306,7 @@ export default function FrenchQuizPage() {
               Recommencer
             </button>
             <button onClick={() => router.push(`/${userId}/french`)} className="flex-1 border-2 border-primary text-primary py-3 rounded-xl font-bold hover:bg-primary/5 transition-colors">
-              Retour
+              Retour au menu
             </button>
           </div>
         </div>

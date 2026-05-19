@@ -49,6 +49,7 @@ const SUBJECT_DEFS = [
     accent: 'text-blue-700',
     bar: 'bg-blue-500',
     practiceHref: (uid: string) => `/${uid}/german`,
+    resultsHref: (uid: string) => `/${uid}/progress?branch=allemand`,
   },
   {
     id: 'math' as const,
@@ -60,6 +61,7 @@ const SUBJECT_DEFS = [
     accent: 'text-violet-700',
     bar: 'bg-violet-500',
     practiceHref: (uid: string) => `/${uid}/math`,
+    resultsHref: (uid: string) => `/${uid}/progress?branch=math`,
   },
   {
     id: 'french' as const,
@@ -71,6 +73,7 @@ const SUBJECT_DEFS = [
     accent: 'text-rose-700',
     bar: 'bg-rose-500',
     practiceHref: (uid: string) => `/${uid}/french`,
+    resultsHref: (uid: string) => `/${uid}/progress?branch=français`,
   },
 ]
 
@@ -230,6 +233,20 @@ export default function SubjectSelectorPage() {
           </Link>
           <h1 className="text-4xl font-extrabold text-primary mt-4 mb-1">Tableau de bord</h1>
           <p className="text-gray-500">Dernière activité, progression, et lien vers une séance</p>
+          <div className="flex gap-3 justify-center flex-wrap mt-4">
+            <Link
+              href={`/${userId}/checks`}
+              className="text-sm font-semibold text-amber-800 border border-amber-300 rounded-xl px-4 py-2 bg-amber-50 hover:bg-amber-100 transition-colors"
+            >
+              Chèques
+            </Link>
+            <Link
+              href={`/${userId}/progress`}
+              className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors"
+            >
+              Ma progression →
+            </Link>
+          </div>
         </div>
 
         {loading ? (
@@ -287,10 +304,10 @@ export default function SubjectSelectorPage() {
                         Réviser →
                       </Link>
                       <Link
-                        href={`/${userId}/progress`}
+                        href={row.resultsHref(userId)}
                         className="inline-flex items-center justify-center rounded-xl border-2 border-gray-200 px-4 py-2.5 text-sm font-bold text-primary hover:bg-gray-50 transition-colors"
                       >
-                        Détails
+                        Résultats
                       </Link>
                       {'extraLink' in row && row.extraLink && (
                         <Link
@@ -308,20 +325,6 @@ export default function SubjectSelectorPage() {
           </div>
         )}
 
-        <div className="flex gap-3 justify-center flex-wrap">
-          <Link
-            href={`/${userId}/checks`}
-            className="text-sm font-semibold text-amber-800 border border-amber-300 rounded-xl px-4 py-2 bg-amber-50 hover:bg-amber-100 transition-colors"
-          >
-            Chèques
-          </Link>
-          <Link
-            href={`/${userId}/progress`}
-            className="text-sm font-semibold text-primary border border-primary/30 rounded-xl px-4 py-2 hover:bg-primary hover:text-white transition-colors"
-          >
-            Vue détaillée complète →
-          </Link>
-        </div>
       </div>
     </div>
   )
