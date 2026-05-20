@@ -73,12 +73,14 @@ export async function aggregatePracticeTotals(userId: number): Promise<{
   totalPoints: number
 }> {
   const vocabResults = await readJson<VocabPracticeResult[]>(`results-${userId}.json`, [])
+  const englishResults = await readJson<VocabPracticeResult[]>(`english-results-${userId}.json`, [])
   const verbResults = await readJson<VerbPracticeResult[]>(`verb-results-${userId}.json`, [])
   const tableResults = await readJson<TablePracticeResult[]>(`tables-results-${userId}.json`, [])
   const tableSessions = await readJson<TablesSessionStored[]>(`tables-sessions-${userId}.json`, [])
   const frenchSessions = await readJson<FrenchSession[]>(`french-sessions-${userId}.json`, [])
 
   const germanCorrect_vocab = vocabResults.filter(r => r.correct === 1).length
+  const englishCorrect_vocab = englishResults.filter(r => r.correct === 1).length
   const germanCorrect_verbs = verbResults.reduce((sum, r) => sum + r.correct_count, 0)
   const germanCorrect = germanCorrect_vocab + germanCorrect_verbs
 
@@ -88,7 +90,7 @@ export async function aggregatePracticeTotals(userId: number): Promise<{
     0,
   )
 
-  const germanPoints = germanCorrect
+  const germanPoints = germanCorrect + englishCorrect_vocab
   const mathPointsFromAnswers = Math.floor(mathCorrect / MATH_CORRECTS_PER_POINT)
   const mathPoints = mathPointsFromAnswers + mathPerfectSessionBonusPoints
   const frenchPoints = frenchSessions.reduce(
