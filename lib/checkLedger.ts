@@ -147,7 +147,8 @@ export async function recomputePracticeEarnLedger(userId: number): Promise<void>
       if (pts <= 0) return []
       const mult = s.point_multiplier || 1
       let detail = `${pts} pts`
-      if (s.difficulty === 'hard') detail += ` (difficile ×${mult})`
+      if (s.difficulty === 'correction') detail = `correction:${pts} pts`
+      else if (s.difficulty === 'hard') detail += ` (difficile ×${mult})`
       else if (s.difficulty === 'medium') detail += ` (moyen ×${mult})`
       return [{ t: s.started_at, sort: 4, frenchSessionPts: pts, frenchDetail: detail } satisfies TimelineEv]
     }),
@@ -196,8 +197,8 @@ export async function recomputePracticeEarnLedger(userId: number): Promise<void>
         : 'Réponse incorrecte'
     } else if ('frenchSessionPts' in e) {
       frenchTotalPts += e.frenchSessionPts
-      headline = 'Français — conjugaison'
-      detail = e.frenchDetail
+      headline = e.frenchDetail.startsWith('correction') ? 'Correction de solde' : 'Français — conjugaison'
+      detail = e.frenchDetail.startsWith('correction') ? e.frenchDetail.replace(/^correction:\s*/,'') : e.frenchDetail
     } else {
       bonusPts += Math.max(0, Math.floor(e.bonus))
       headline = 'Bonus série tables parfaite'

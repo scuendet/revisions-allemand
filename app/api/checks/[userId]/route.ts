@@ -15,13 +15,18 @@ export async function GET(
     const totals = await aggregatePracticeTotals(userId)
     const redemptionsRaw = await readRedemptions(userId)
     const usedChecks = redemptionsRaw.reduce((sum, r) => sum + r.checks_used, 0)
-    const earnedChecks = Math.floor(totals.totalPoints / POINTS_PER_CHECK)
-    const availableChecks = Math.max(earnedChecks - usedChecks, 0)
     const remainderPoints = totals.totalPoints % POINTS_PER_CHECK
 
     const redemptions = [...redemptionsRaw].sort((a, b) => b.created_at.localeCompare(a.created_at))
 
     const ledger = await sortedLedgerDesc(userId)
+
+    // Use the ledger as the authoritative source for earned checks — it processes
+    // events chronologically and handles all subjects, so it always stays in sync
+    // with the displayed history entries.
+    const earnedChecks = ledger.filter(e => e.kind === 'earn').reduce((s, e) => s + e.checks, 0)
+    const spendUndoChecks = ledger.filter(e => e.kind === 'spend_undo').reduce((s, e) => s + e.checks, 0)
+    const availableChecks = Math.max(earnedChecks - usedChecks + spendUndoChecks, 0)
 
     return NextResponse.json({
       pointsPerCheck: POINTS_PER_CHECK,
