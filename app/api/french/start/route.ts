@@ -27,7 +27,7 @@ const DIFFICULTY_RATIOS: Record<string, number> = {
 const MULTIPLIERS: Record<string, number> = {
   easy: 1,
   medium: 2,
-  hard: 5,
+  hard: 3,
 }
 
 function shuffle<T>(arr: T[]): T[] {

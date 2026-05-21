@@ -17,7 +17,7 @@ const ALL_VERBS = [
 const DIFFICULTIES = [
   { id: 'easy', label: 'Facile', desc: 'Surtout des questions maîtrisées', multiplier: '×1', color: 'emerald' },
   { id: 'medium', label: 'Moyen', desc: 'Mix maîtrisé / à retravailler', multiplier: '×2', color: 'amber' },
-  { id: 'hard', label: 'Difficile', desc: 'Surtout des questions à retravailler', multiplier: '×5', color: 'rose' },
+  { id: 'hard', label: 'Difficile', desc: 'Surtout des questions à retravailler', multiplier: '×3', color: 'rose' },
 ] as const
 
 export default function FrenchHubPage() {
